@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTER EXPO S.A.S | Presentación Ejecutiva Corporativa 2026</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #B71C1C;
+            --primary-dark: #8B0000;
+            --primary-light: #E53935;
+            --secondary: #1565C0;
+            --secondary-light: #42A5F5;
+            --accent: #D4AF37;
+            --success: #00695C;
+            --success-light: #26A69A;
+            --warning: #E65100;
+            --bg-dark: #0D1B2A;
+            --bg-dark-alt: #1A2F42;
+            --bg-light: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --text-dark: #0D1B2A;
+            --text-light: #FFFFFF;
+            --text-muted: #757575;
+            --border: #E8E8E8;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100vh;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide.active {
+            display: flex;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide.light { background: linear-gradient(135deg, var(--bg-light) 0%, #FFFFFF 100%); }
+        .slide.dark { background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-alt) 100%); color: var(--text-light); }
+        .slide.brand { background: #FFFFFF; color: var(--text-dark); }
+
+        .slide-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid rgba(183, 28, 28, 0.2);
+            z-index: 10;
+        }
+
+        .slide.dark .slide-header { border-bottom-color: rgba(255, 255, 255, 0.1); }
+
+        .slide-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 0;
+        }
+
+        .slide-number {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            padding: 8px 16px;
+            background: rgba(183, 28, 28, 0.1);
+            border-radius: 50px;
+        }
+
+        .slide.dark .slide-number {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent);
+        }
+
+        .slide-content {
+            width: 100%;
+            height: 100%;
+            padding: 80px 40px 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 12px;
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .title-slide .slide-content {
+            text-align: center;
+            padding: 0 60px;
+        }
+
+        .main-title {
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-subtitle {
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: var(--accent);
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .divider {
+            width: 200px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--primary-light));
+            margin: 40px auto;
+            border-radius: 2px;
+        }
+
+        .meta-info {
+            font-size: 1rem;
+            color: #BBB;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 60px;
+        }
+
+        .grid-2 { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 14px; 
+            margin: 10px 0;
+            min-width: 0;
+        }
+        .grid-3 { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; 
+            margin: 10px 0;
+            min-width: 0;
+        }
+        .grid-4 { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 8px; 
+            margin: 8px 0;
+            min-width: 0;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary);
+            overflow: hidden;
+            word-wrap: break-word;
+            min-width: 0;
+            font-size: 0.9rem;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-left-color: var(--primary-light);
+        }
+
+        .card.accent { border-left-color: var(--accent); }
+        .card.success { border-left-color: var(--success); }
+        .card.info { border-left-color: var(--secondary); }
+
+        .card.dark {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .card.dark:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary);
+            word-break: break-word;
+        }
+
+        .card.dark .card-title { color: var(--accent); }
+
+        .card-value {
+            font-size: 2.3rem;
+            font-weight: 900;
+            margin: 12px 0;
+            color: var(--primary);
+            word-break: break-word;
+        }
+
+        .card.dark .card-value { color: var(--accent); }
+
+        .card-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .card.dark .card-label { color: #AAA; }
+
+        .card-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 14px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border-top: 3px solid var(--primary);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            word-wrap: break-word;
+            min-width: 0;
+            font-size: 0.9rem;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-box.success { border-top-color: var(--success); }
+        .stat-box.info { border-top-color: var(--secondary); }
+        .stat-box.warning { border-top-color: var(--warning); }
+
+        .stat-number {
+            font-size: 1.7rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin: 6px 0;
+            word-break: break-word;
+        }
+
+        .stat-box.success .stat-number { color: var(--success); }
+        .stat-box.info .stat-number { color: var(--secondary); }
+        .stat-box.warning .stat-number { color: var(--warning); }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            position: relative;
+            height: 260px;
+            margin: 6px 0;
+            overflow: hidden;
+            min-width: 0;
+        }
+
+        .chart-container.dark {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chart-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chart-container.dark .chart-title { color: var(--accent); }
+
+        .highlight { color: var(--primary); font-weight: 700; }
+        .highlight-accent { color: var(--accent); font-weight: 700; }
+        .highlight-success { color: var(--success); font-weight: 700; }
+        .highlight-secondary { color: var(--secondary); font-weight: 700; }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .badge.secondary { background: var(--secondary); }
+        .badge.success { background: var(--success); }
+        .badge.accent { background: var(--accent); color: var(--text-dark); }
+
+        .alert {
+            padding: 12px;
+            border-radius: 12px;
+            border-left: 5px solid;
+            margin: 6px 0;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            overflow: hidden;
+            word-break: break-word;
+        }
+
+        .alert.warning { background: #FFF8E1; border-left-color: #FFC107; color: #333; }
+        .alert.danger { background: #FFEBEE; border-left-color: var(--primary); color: #C62828; }
+        .alert.success { background: #E8F5E9; border-left-color: var(--success); color: #1B5E20; }
+        .alert.dark { background: rgba(255, 255, 255, 0.08); border-left-color: var(--accent); color: white; }
+
+        .content-list {
+            list-style: none;
+        }
+
+        .content-list li {
+            padding: 8px 0 8px 28px;
+            position: relative;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-dark);
+            word-break: break-word;
+        }
+
+        .slide.dark .content-list li { color: #DDD; }
+
+        .content-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 6px;
+            word-break: break-word;
+        }
+
+        .slide.dark .section-title {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .slide-footer {
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .slide.dark .slide-footer { color: #999; }
+
+        .footer-sep {
+            width: 1px;
+            height: 20px;
+            background: var(--border);
+        }
+
+        .slide.dark .footer-sep { background: rgba(255, 255, 255, 0.2); }
+
+        .nav-controls {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            background: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: var(--shadow-lg);
+            animation: slideUp 0.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateX(-50%) translateY(50px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        .nav-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-btn:hover:not(:disabled) {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(183, 28, 28, 0.3);
+        }
+
+        .nav-btn:disabled {
+            background: #CCC;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(135deg, #0D47A1, var(--secondary));
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(21, 101, 192, 0.3);
+        }
+
+        .page-indicator {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 100px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            z-index: 999;
+            transition: width 0.3s ease;
+        }
+
+        @media (max-width: 1024px) {
+            .slide-content { 
+                padding: 100px 35px 80px 35px;
+                max-height: calc(100vh - 200px);
+            }
+            .slide-header { padding: 30px 35px; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .main-title { font-size: 3.5rem; }
+            .stat-number { font-size: 2rem; }
+            .card-value { font-size: 2rem; }
+            .chart-container { height: 300px; }
+        }
+
+        @media (max-width: 768px) {
+            .slide-content { 
+                padding: 100px 18px 80px 18px;
+                max-height: calc(100vh - 160px);
+                justify-content: flex-start;
+            }
+            .slide-header { 
+                padding: 25px 18px; 
+                flex-direction: column;
+            }
+            .nav-controls { bottom: 20px; }
+            .main-title { font-size: 2.5rem; }
+            .stat-number { font-size: 1.5rem; }
+            .card-value { font-size: 1.5rem; }
+            .grid-2, .grid-3, .grid-4 { 
+                grid-template-columns: 1fr; 
+                gap: 12px;
+                width: 100%;
+            }
+            .chart-container { 
+                height: auto;
+                min-height: 250px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .card { 
+                padding: 16px; 
+                font-size: 0.9rem;
+                min-width: 0;
+            }
+            .stat-box { 
+                padding: 14px; 
+                font-size: 0.85rem;
+            }
+            .section-title { 
+                font-size: 1.15rem; 
+                margin-bottom: 12px; 
+            }
+            .alert { 
+                padding: 18px; 
+                font-size: 0.85rem;
+                margin: 20px 0;
+            }
+            canvas { 
+                max-width: 100%;
+                height: auto !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide-content {
+                padding: 90px 12px 70px 12px;
+                max-height: calc(100vh - 140px);
+            }
+            .slide-header { 
+                padding: 20px 12px; 
+                flex-direction: column;
+            }
+            .slide-header h2 { font-size: 1.4rem; }
+            .chart-container { 
+                min-height: 220px; 
+                padding: 12px; 
+            }
+            .card { 
+                padding: 12px; 
+                font-size: 0.8rem;
+            }
+            .stat-box { 
+                padding: 12px; 
+                font-size: 0.75rem;
+            }
+            .grid-2, .grid-3, .grid-4 { 
+                gap: 10px; 
+            }
+            .alert { 
+                padding: 15px; 
+                margin: 15px 0;
+                font-size: 0.8rem;
+            }
+            .section-title { 
+                font-size: 1rem; 
+                margin-bottom: 10px;
+            }
+            .main-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: PORTADA -->
+    <div class="slide brand active">
+        <div class="slide-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgI_dzFGgOEV_u1ShOG3jtpTt7UfcgOEcHgw&s" alt="INTER EXPO Logo" style="width: 220px; height: auto; margin-bottom: 40px; margin-top: -40px;">
+            <h1 class="main-title" style="color: #1a1a1a;">INTER EXPO</h1>
+            <h2 class="main-subtitle" style="color: var(--primary);">Plan Estratégico Corporativo 2026</h2>
+            <div class="divider"></div>
+            <p style="font-size: 1.3rem; color: #555; margin-top: 30px;">
+                <i class="fas fa-briefcase"></i> Presentación Ejecutiva para Junta Directiva
+            </p>
+            <p class="meta-info" style="color: #666;">
+                <i class="fas fa-calendar-alt"></i> Enero 2026 | Análisis Integral | Decisiones Estratégicas
+            </p>
+        </div>
+        <div class="slide-footer" style="color: #666;">
+            <span style="color: var(--primary);">INTER EXPO S.A.S</span>
+            <div class="footer-sep" style="background: rgba(0,0,0,0.1);"></div>
+            <span>Documento Confidencial</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: EXECUTIVE SUMMARY -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Síntesis Ejecutiva 2026</h2>
+            <span class="slide-number">2</span>
+        </div>
+        <div class="slide-content">
+            <div class="grid-4">
+                <div class="stat-box">
+                    <div class="stat-label">Ingresos Proyectados</div>
+                    <div class="stat-number">$9.3B</div>
+                    <div class="stat-label" style="color: var(--success);">↑ 12% vs 2025</div>
+                </div>
+                <div class="stat-box success">
+                    <div class="stat-label">Utilidad Neta</div>
+                    <div class="stat-number">$1.1B</div>
+                    <div class="stat-label" style="color: var(--success);">12.1% Margen</div>
+                </div>
+                <div class="stat-box warning">
+                    <div class="stat-label">Gastos Operativos</div>
+                    <div class="stat-number">$2.3B</div>
+                    <div class="stat-label">Escenario Optimizado</div>
+                </div>
+                <div class="stat-box info">
+                    <div class="stat-label">ROI Esperado</div>
+                    <div class="stat-number">18.5%</div>
+                    <div class="stat-label">Proyectado Anual</div>
+                </div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 40px;">
+                <div class="card">
+                    <h3 class="card-title">📊 Desempeño Operacional</h3>
+                    <ul class="content-list" style="margin-top: 15px;">
+                        <li>Ventas distribuidas en 4 líneas de negocio estratégicas</li>
+                        <li>Arquitectura Efímera: <span class="highlight">53%</span> portafolio principal</li>
+                        <li>Proyectos Especiales: <span class="highlight">26%</span> ingresos base</li>
+                        <li>Margen operacional objetivo: <span class="highlight">35%+</span></li>
+                    </ul>
+                </div>
+                <div class="card accent">
+                    <h3 class="card-title" style="color: var(--accent);">⚠️ Desafíos Críticos</h3>
+                    <ul class="content-list" style="margin-top: 15px;">
+                        <li>Capital de trabajo: <span class="highlight">$0 MM</span> disponible</li>
+                        <li>60% ventas modalidad crédito 60 días</li>
+                        <li>Competencia informal en aumento regional</li>
+                        <li>Optimización agresiva de costos requerida</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 2</span>
+            <div class="footer-sep"></div>
+            <span><i class="fas fa-circle" style="color: var(--primary); font-size: 0.6rem;"></i> KPIs Principales</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: DIAGNÓSTICO MERCADO -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Diagnóstico del Mercado</h2>
+            <span class="slide-number">3</span>
+        </div>
+        <div class="slide-content">
+            <div class="grid-2">
+                <div>
+                    <h3 class="section-title"><i class="fas fa-chart-line"></i> Tendencias del Sector</h3>
+                    <ul class="content-list">
+                        <li>Caída de ventas en últimos <span class="highlight">5 años</span> consecutivos</li>
+                        <li>Disminución significativa de utilidades netas</li>
+                        <li>Competencia informal y economía circular impactando</li>
+                        <li>Recintos feriales con ofertas integradas agresivas</li>
+                        <li>Corrupción gubernamental impacto directo</li>
+                        <li>Costos materia prima en aumento constante</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="section-title"><i class="fas fa-target"></i> Oportunidades 2026</h3>
+                    <ul class="content-list">
+                        <li>Diferenciación vía diseño disruptivo reutilizable</li>
+                        <li>Certificaciones ambientales (Huella de Carbono)</li>
+                        <li>Alianzas estratégicas "Lápiz de Acero"</li>
+                        <li>Renovación integral mobiliario corporativo</li>
+                        <li>Enfoque en segmentos premium mercado</li>
+                        <li>Expansión internacional selectiva (10% cartera)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="alert danger" style="margin-top: 30px;">
+                <strong><i class="fas fa-exclamation-circle"></i> Crítico:</strong> 
+                Desafíos estructurales requieren decisiones estratégicas inmediatas para mantener viabilidad en 2026
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 3</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: OBJETIVOS ESTRATÉGICOS -->
+    <div class="slide dark">
+        <div class="slide-header" style="border-bottom-color: rgba(255, 255, 255, 0.2);">
+            <h2 style="color: white;">Pilares Estratégicos 2026</h2>
+            <span class="slide-number" style="color: var(--accent);">4</span>
+        </div>
+        <div class="slide-content">
+            <p style="text-align: center; font-size: 1.3rem; color: #CCC; margin-bottom: 50px;">
+                Tres ejes de transformación para recuperar rentabilidad
+            </p>
+
+            <div class="grid-3">
+                <div class="card dark">
+                    <div style="text-align: center;">
+                        <i class="fas fa-tools" style="font-size: 2.8rem; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 class="card-title" style="text-align: center; color: white;">OPTIMIZAR</h3>
+                    </div>
+                    <p style="text-align: center; color: #BBB; margin-top: 15px; line-height: 1.7;">
+                        Gastos fijos sin comprometer capacidad. Target: <span style="color: var(--success); font-weight: 700;">$2.3B</span>
+                    </p>
+                </div>
+
+                <div class="card dark">
+                    <div style="text-align: center;">
+                        <i class="fas fa-chart-area" style="font-size: 2.8rem; color: var(--secondary-light); margin-bottom: 15px;"></i>
+                        <h3 class="card-title" style="text-align: center; color: white;">ESTABILIZAR</h3>
+                    </div>
+                    <p style="text-align: center; color: #BBB; margin-top: 15px; line-height: 1.7;">
+                        Flujo de caja mediante anticipos y mejora términos comerciales
+                    </p>
+                </div>
+
+                <div class="card dark">
+                    <div style="text-align: center;">
+                        <i class="fas fa-rocket" style="font-size: 2.8rem; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h3 class="card-title" style="text-align: center; color: white;">CRECER</h3>
+                    </div>
+                    <p style="text-align: center; color: #BBB; margin-top: 15px; line-height: 1.7;">
+                        Rentabilidad via diferenciación. Target: <span style="color: var(--accent); font-weight: 700;">35%+ margen</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="alert dark" style="margin-top: 40px; text-align: center;">
+                <strong style="font-size: 1.2rem;">Visión Corporativa:</strong><br>
+                "Más fortalecida en posicionamiento de mercado y estabilidad financiera"
+            </div>
+        </div>
+        <div class="slide-footer" style="color: #999;">
+            <span>Página 4</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: PROYECCIÓN INGRESOS -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Proyección de Ingresos 2026</h2>
+            <span class="slide-number">5</span>
+        </div>
+        <div class="slide-content">
+            <div class="grid-2">
+                <div class="chart-container">
+                    <h3 class="chart-title"><i class="fas fa-pie-chart"></i> Distribución Segmentación</h3>
+                    <canvas id="chartSegmentacion" style="max-height: 300px;"></canvas>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <h3 class="card-title">Ingresos Totales</h3>
+                        <div class="card-value">$9,324 MM</div>
+                        <div class="card-subtitle">Proyectado 2026 | Crecimiento 12%</div>
+
+                        <div style="margin-top: 30px; background: #F5F5F5; padding: 20px; border-radius: 8px;">
+                            <div style="display: flex; justify-content: space-between; margin: 12px 0;">
+                                <span><strong>Arq. Efímera</strong></span>
+                                <span style="color: var(--primary); font-weight: 700;">53%</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 12px 0;">
+                                <span><strong>Proy. Especiales</strong></span>
+                                <span style="color: var(--primary); font-weight: 700;">26%</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 12px 0;">
+                                <span><strong>Eventos Propios</strong></span>
+                                <span style="color: var(--primary); font-weight: 700;">11%</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin: 12px 0; padding-top: 12px; border-top: 1px solid #DDD;">
+                                <span><strong>Internacionales</strong></span>
+                                <span style="color: var(--primary); font-weight: 700;">10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert warning" style="margin-top: 30px;">
+                <strong><i class="fas fa-lightbulb"></i> Estrategia:</strong>
+                Enfoque Efímera + Especiales para mitigar riesgos y mantener márgenes competitivos
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 5</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: FINANCIAMIENTO -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Estructura de Financiamiento</h2>
+            <span class="slide-number">6</span>
+        </div>
+        <div class="slide-content">
+            <div class="grid-2" style="align-items: center; justify-content: center;">
+                <div class="chart-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <h3 class="chart-title"><i class="fas fa-exchange-alt"></i> Modalidades de Pago</h3>
+                    <canvas id="chartFinanciamiento" style="max-height: 280px; width: 100%; max-width: 280px;"></canvas>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div class="card">
+                        <h3 class="card-title"><i class="fas fa-link"></i> Cadena de Valor Quebrada</h3>
+                        <p style="color: var(--text-muted); margin: 15px 0; line-height: 1.7;">
+                            Proveedores no financian pero INTER EXPO debe hacerlo con clientes
+                        </p>
+
+                        <div style="background: #E3F2FD; padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 3px solid var(--secondary);">
+                            <div style="font-weight: 700; color: var(--secondary);">40% Proyectos</div>
+                            <div style="color: var(--text-dark); margin-top: 5px;">Anticipo: <span class="highlight">60%</span></div>
+                        </div>
+
+                        <div style="background: #FFEBEE; padding: 15px; border-radius: 8px; border-left: 3px solid var(--primary);">
+                            <div style="font-weight: 700; color: var(--primary);">60% Ventas</div>
+                            <div style="color: var(--text-dark); margin-top: 5px;">Plazo: <span class="highlight">60 días</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert danger" style="margin-top: 30px;">
+                <strong><i class="fas fa-exclamation-triangle"></i> Crítico:</strong> 
+                Brecha requiere línea crédito contingente y renegociación agresiva con proveedores
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 6</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: RENTABILIDAD COMERCIAL -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Análisis de Rentabilidad por Comercial</h2>
+            <span class="slide-number">7</span>
+        </div>
+        <div class="slide-content">
+            <h3 class="section-title"><i class="fas fa-users-cog"></i> Volumen de Venta vs. Utilidad Generada</h3>
+            
+            <div class="chart-container">
+                <canvas id="chartComerciales" style="max-height: 320px;"></canvas>
+            </div>
+
+            <div class="grid-4" style="margin-top: 20px;">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 1.8rem; color: var(--success); margin-bottom: 8px;">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Diana S.</h3>
+                    <div style="font-size: 2rem; font-weight: 900; color: var(--success); margin: 8px 0;">55%</div>
+                    <div class="stat-label" style="margin-bottom: 8px;">Margen Real</div>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 1.8rem; color: var(--secondary); margin-bottom: 8px;">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Sergio R.</h3>
+                    <div style="font-size: 2rem; font-weight: 900; color: var(--secondary); margin: 8px 0;">40%</div>
+                    <div class="stat-label" style="margin-bottom: 8px;">Margen Real</div>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 1.8rem; color: var(--warning); margin-bottom: 8px;">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Gerencia</h3>
+                    <div style="font-size: 2rem; font-weight: 900; color: var(--warning); margin: 8px 0;">45%</div>
+                    <div class="stat-label" style="margin-bottom: 8px;">Margen Real</div>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 1.8rem; color: var(--primary); margin-bottom: 8px;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Giuseppe</h3>
+                    <div style="font-size: 2rem; font-weight: 900; color: var(--primary); margin: 8px 0;">25%</div>
+                    <div class="stat-label">Margen Real</div>
+                </div>
+            </div>
+
+            <div class="alert warning" style="margin-top: 30px;">
+                <strong><i class="fas fa-lightbulb"></i> Insight:</strong> 
+                30 puntos porcentuales entre mejor y peor. Oportunidad de estandarización
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 7</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 8: ANÁLISIS GASTOS -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Estructura de Costos Operativos</h2>
+            <span class="slide-number">8</span>
+        </div>
+        <div class="slide-content">
+            <h3 class="section-title"><i class="fas fa-calculator"></i> CON vs SIN INTER EXPO</h3>
+            
+            <div class="grid-2" style="margin-top: 30px;">
+                <div>
+                    <div class="card" style="margin-bottom: 20px;">
+                        <div>
+                            <span class="badge">Escenario 1</span>
+                            <h3 class="card-title">CON INTER EXPO</h3>
+                        </div>
+                        <div class="card-value" style="margin: 15px 0;">$2.9B</div>
+                        <div class="card-label">Gastos Operativos Anuales</div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="chartGastosConIExpo" style="max-height: 240px;"></canvas>
+                    </div>
+
+                    <div style="background: #F5F5F5; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Nómina</span>
+                            <span class="highlight">60%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Fin. Gtos</span>
+                            <span class="highlight">8%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Arriendo</span>
+                            <span>8%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Vigilancia</span>
+                            <span>6%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card success" style="margin-bottom: 20px;">
+                        <div>
+                            <span class="badge success">Escenario 2</span>
+                            <h3 class="card-title" style="color: var(--success);">SIN INTER EXPO</h3>
+                        </div>
+                        <div class="card-value" style="margin: 15px 0; color: var(--success);">$2.3B</div>
+                        <div class="card-label">Gastos Operativos Anuales</div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="chartGastosSinIExpo" style="max-height: 240px;"></canvas>
+                    </div>
+
+                    <div style="background: #E8F5E9; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Nómina</span>
+                            <span class="highlight-success">73%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Arriendo</span>
+                            <span>11%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Honorarios</span>
+                            <span>6%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
+                            <span>Vigilancia</span>
+                            <span>4%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert success" style="margin-top: 30px;">
+                <strong><i class="fas fa-check-circle"></i> Ahorro Potencial:</strong>
+                <span class="highlight-success">$600 MM anuales</span> eliminando INTER EXPO | Impacto: +6.4% margen neto
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 8</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: P&L -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Proyección Financiera 2026</h2>
+            <span class="slide-number">9</span>
+        </div>
+        <div class="slide-content">
+            <h3 class="section-title"><i class="fas fa-chart-line"></i> Estado de Ganancias (Escenario Optimizado)</h3>
+
+            <div class="chart-container">
+                <canvas id="chartPyL" style="max-height: 300px;"></canvas>
+            </div>
+
+            <div class="grid-4" style="margin-top: 30px;">
+                <div class="stat-box">
+                    <div class="stat-label">Ingresos Totales</div>
+                    <div class="stat-number">$9,324 MM</div>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">Ventas 2026</p>
+                </div>
+
+                <div class="stat-box warning">
+                    <div class="stat-label">Costo Producción</div>
+                    <div class="stat-number">$5,163 MM</div>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">MP + MO</p>
+                </div>
+
+                <div class="stat-box info">
+                    <div class="stat-label">Utilidad Bruta</div>
+                    <div class="stat-number">$4,161 MM</div>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">Después costos</p>
+                </div>
+
+                <div class="stat-box success">
+                    <div class="stat-label">Utilidad Neta</div>
+                    <div class="stat-number">$1,125 MM</div>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">Margen: 12.1%</p>
+                </div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 30px;">
+                <div class="card">
+                    <h3 class="card-title">📊 Métricas Rentabilidad</h3>
+                    <ul class="content-list" style="margin-top: 15px;">
+                        <li>Margen Bruto: <span class="highlight">44.6%</span></li>
+                        <li>Margen Operacional: <span class="highlight">24.6%</span></li>
+                        <li>Margen Neto: <span class="highlight">12.1%</span></li>
+                        <li>Target 2026: <span class="highlight">15%+</span></li>
+                    </ul>
+                </div>
+
+                <div class="card accent">
+                    <h3 class="card-title" style="color: var(--accent);">🎯 Brecha Desempeño</h3>
+                    <ul class="content-list" style="margin-top: 15px;">
+                        <li>Margen Actual: 12.1%</li>
+                        <li>Margen Target: 15.0%</li>
+                        <li>Brecha: <span class="highlight-accent">-2.9%</span></li>
+                        <li>Impacto: <span class="highlight-accent">$270 MM</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 9</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 10: ALERTA -->
+    <div class="slide dark" style="background: linear-gradient(135deg, #5D2C2C 0%, var(--bg-dark) 100%);">
+        <div class="slide-header" style="border-bottom-color: rgba(255, 255, 255, 0.2);">
+            <h2 style="color: #FF8A80;"><i class="fas fa-exclamation-triangle"></i> ALERTA CRÍTICA</h2>
+            <span class="slide-number" style="color: #FF8A80;">10</span>
+        </div>
+        <div class="slide-content" style="text-align: center;">
+            <p style="font-size: 1.5rem; color: #DDD; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 1px;">
+                Capital de Trabajo Disponible 2026
+            </p>
+
+            <div style="display: inline-block; margin: 30px 0;">
+                <div style="font-size: 5.5rem; font-weight: 900; color: #FF6B6B; margin: 20px 0; text-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);">
+                    $0
+                </div>
+                <p class="meta-info" style="font-size: 1.5rem; color: var(--accent);">MILLONES DE PESOS</p>
+            </div>
+
+            <div style="background: rgba(255, 107, 107, 0.12); border: 2px solid rgba(255, 107, 107, 0.3); border-radius: 12px; padding: 40px; margin-top: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h3 style="color: #FF8A80; font-size: 1.5rem; margin-bottom: 20px;">Implicaciones Operacionales</h3>
+                <p style="color: #DDD; font-size: 1.1rem; line-height: 1.8;">
+                    Incapacidad para financiar operaciones y ejecución de proyectos en 2026.
+                </p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
+                    <div style="background: rgba(255, 107, 107, 0.1); padding: 15px; border-radius: 8px;">
+                        <p style="color: var(--accent); font-weight: 700;">⚠️ Riesgo Inmediato</p>
+                        <p style="color: #AAA; margin-top: 8px;">Imposibilidad financiar compras materia prima adelantadas</p>
+                    </div>
+                    <div style="background: rgba(255, 107, 107, 0.1); padding: 15px; border-radius: 8px;">
+                        <p style="color: var(--accent); font-weight: 700;">💔 Oportunidad Perdida</p>
+                        <p style="color: #AAA; margin-top: 8px;">Proyectos rechazados por falta liquidez anticipos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert dark" style="margin-top: 40px; text-align: left; padding: 28px; border-radius: 12px;">
+                <strong style="font-size: 1.1rem; color: #FF8A80; display: block; margin-bottom: 18px;">⚡ ACCIONES INMEDIATAS:</strong>
+                <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 10px;">
+                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Aumentar anticipos a mínimo 70% (actual 60%)</li>
+                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Renegociar términos proveedores a 45+ días</li>
+                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Línea crédito contingente mínimo $500MM</li>
+                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Acelerar cobranza: 60 → 30 días</li>
+                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Optimizar ciclo de capital trabajo</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-footer" style="color: #999;">
+            <span>Página 10</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 11: ADDED VALUE -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Estrategia Competitiva: ADDED VALUE</h2>
+            <span class="slide-number">11</span>
+        </div>
+        <div class="slide-content">
+            <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px; text-align: center; font-weight: 600;">
+                Diferenciación de propuesta de valor para recuperar márgenes y posicionamiento
+            </p>
+
+            <div class="grid-3" style="margin-bottom: 30px;">
+                <div class="card">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <i class="fas fa-pencil-ruler" style="font-size: 3rem; color: var(--primary);"></i>
+                    </div>
+                    <h3 class="card-title" style="text-align: center;">Diseño Disruptivo</h3>
+                    <p style="text-align: center; color: var(--text-muted); line-height: 1.6;">
+                        Modelos reutilizables en ferias, congresos y espacios corporativos. Reduce costos cliente 30-40%.
+                    </p>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border);">
+                        <span class="badge" style="font-size: 0.75rem;">+15% Margen</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <i class="fas fa-leaf" style="font-size: 3rem; color: var(--success);"></i>
+                    </div>
+                    <h3 class="card-title" style="text-align: center; color: var(--success);">Certificación Ambiental</h3>
+                    <p style="text-align: center; color: var(--text-muted); line-height: 1.6;">
+                        Huella de Carbono certificada. Acceso mercados premium con presupuestos ESG (25% mercado).
+                    </p>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border);">
+                        <span class="badge success" style="font-size: 0.75rem;">+10% Ventas</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <i class="fas fa-award" style="font-size: 3rem; color: var(--warning);"></i>
+                    </div>
+                    <h3 class="card-title" style="text-align: center; color: var(--warning);">Premio Lápiz Acero</h3>
+                    <p style="text-align: center; color: var(--text-muted); line-height: 1.6;">
+                        Proveedor oficial certificado. Reconocimiento en arquitectura efímera de excelencia.
+                    </p>
+                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border);">
+                        <span class="badge secondary" style="font-size: 0.75rem;">+12% Reputación</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card accent">
+                    <h3 class="card-title" style="color: var(--accent);">CAPEX 2026</h3>
+                    <p style="color: var(--text-muted); margin: 15px 0; line-height: 1.7;">
+                        Renovación mobiliario corporativo seleccionado por Dirección General.
+                    </p>
+                    <div style="margin-top: 15px; padding: 15px; background: #FFFDE7; border-radius: 8px;">
+                        <strong style="color: #F57F17;">Presupuesto: $150-200MM</strong><br>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">ROI: 18 meses</span>
+                    </div>
+                </div>
+
+                <div class="card success">
+                    <h3 class="card-title" style="color: var(--success);">Resultados 2026</h3>
+                    <ul class="content-list" style="margin-top: 15px;">
+                        <li>Margen: <span class="highlight-success">+5-8%</span></li>
+                        <li>Ingresos: <span class="highlight-success">+15-20%</span></li>
+                        <li>Posicionamiento premium</li>
+                        <li>Diferenciación vs informal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 11</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: PLAN ACCIÓN -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Plan de Acción 2026</h2>
+            <span class="slide-number">12</span>
+        </div>
+        <div class="slide-content">
+            <div class="grid-2">
+                <div>
+                    <h3 class="section-title"><i class="fas fa-lightning"></i> Corto Plazo (Q1-Q2)</h3>
+                    <ul class="content-list">
+                        <li>Política anticipos mínimo 70%</li>
+                        <li>Renegociar líneas crédito proveedores</li>
+                        <li>Auditoría gastos operativos fijos</li>
+                        <li>Plan cobranza acelerada 60→30 días</li>
+                        <li>Evaluar estructura INTER EXPO</li>
+                        <li>Iniciar certificación ambiental</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="section-title"><i class="fas fa-chart-pie"></i> Mediano Plazo (Q3-Q4)</h3>
+                    <ul class="content-list">
+                        <li>Lanzar línea productos Added Value</li>
+                        <li>Obtener certificación Huella Carbono</li>
+                        <li>Formalizar integración Lápiz Acero</li>
+                        <li>Optimizar mix portafolio</li>
+                        <li>Evaluación rentabilidad comercial</li>
+                        <li>Renovación CAPEX mobiliario</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 30px;">
+                <div class="card success">
+                    <h3 class="card-title" style="color: var(--success);">KPIs Éxito Q1</h3>
+                    <ul class="content-list">
+                        <li>Anticipos: <span class="highlight-success">70%+</span></li>
+                        <li>Reducción gastos: <span class="highlight-success">-5%</span></li>
+                        <li>Días cobranza: <span class="highlight-success">45d</span></li>
+                        <li>Margen op: <span class="highlight-success">≥24%</span></li>
+                    </ul>
+                </div>
+
+                <div class="card info">
+                    <h3 class="card-title" style="color: var(--secondary);">Hitos Finales</h3>
+                    <ul class="content-list">
+                        <li>Ingresos: <span class="highlight-secondary">$9.3B</span></li>
+                        <li>Utilidad Neta: <span class="highlight-secondary">$1.1B</span></li>
+                        <li>Margen Neto: <span class="highlight-secondary">12.1%</span></li>
+                        <li>ROI: <span class="highlight-secondary">18.5%</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 13: CONCLUSIONES -->
+    <div class="slide light">
+        <div class="slide-content" style="text-align: center;">
+            <h2 style="font-size: 3.5rem; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; color: #1a1a1a;">2026: Transformación y Rentabilidad</h2>
+
+            <div class="grid-3" style="margin: 60px 0;">
+                <div style="text-align: center;">
+                    <p style="color: var(--accent); font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
+                        <i class="fas fa-arrow-up"></i> $9.3B
+                    </p>
+                    <p style="color: #666; font-size: 1.1rem;">Ingresos Proyectados</p>
+                </div>
+                <div style="text-align: center;">
+                    <p style="color: var(--accent); font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
+                        <i class="fas fa-dollar-sign"></i> $1.1B
+                    </p>
+                    <p style="color: #666; font-size: 1.1rem;">Utilidad Neta</p>
+                </div>
+                <div style="text-align: center;">
+                    <p style="color: var(--accent); font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
+                        <i class="fas fa-percent"></i> 18.5%
+                    </p>
+                    <p style="color: #666; font-size: 1.1rem;">ROI Esperado</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div style="background: rgba(255, 255, 255, 0.5); border: 2px solid rgba(212, 175, 55, 0.4); border-radius: 12px; padding: 40px; max-width: 700px; margin: 50px auto 0;">
+                <p style="font-size: 1.4rem; color: #1a1a1a; line-height: 1.9; margin-bottom: 25px;">
+                    <strong>El éxito depende del compromiso total de todos los equipos.</strong>
+                </p>
+                <p style="font-size: 1.1rem; color: #333; line-height: 1.8;">
+                    <span style="color: var(--accent); font-weight: 700;">Optimización</span> + 
+                    <span style="color: var(--accent); font-weight: 700;">Innovación</span> + 
+                    <span style="color: var(--accent); font-weight: 700;">Comercial</span> = 
+                    <span style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">Rentabilidad Sostenible</span>
+                </p>
+            </div>
+
+            <p class="meta-info" style="margin-top: 80px; color: #666;">
+                <i class="fas fa-user-tie"></i> Contabilidad y Finanzas | INTER EXPO S.A.S
+            </p>
+        </div>
+        <div class="slide-footer" style="color: #666;">
+            <span>Página 13</span>
+            <div class="footer-sep" style="background: rgba(0,0,0,0.1);"></div>
+            <span style="color: var(--accent);">Confidencial</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav-controls">
+        <button class="nav-btn" id="prevBtn" onclick="previousSlide()">
+            <i class="fas fa-chevron-left"></i> ANTERIOR
+        </button>
+        <div class="page-indicator">
+            <span id="currentSlide">1</span> / <span id="totalSlides">13</span>
+        </div>
+        <button class="download-btn" onclick="downloadPDF()" title="Descargar presentación en PDF">
+            <i class="fas fa-download"></i> PDF
+        </button>
+        <button class="nav-btn" id="nextBtn" onclick="nextSlide()">
+            SIGUIENTE <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+            
+            if (n > totalSlides) currentSlide = totalSlides;
+            if (n < 1) currentSlide = 1;
+            
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+                slide.style.display = 'none';
+            });
+
+            slides[currentSlide - 1].classList.add('active');
+            slides[currentSlide - 1].style.display = 'flex';
+
+            document.getElementById('currentSlide').textContent = currentSlide;
+            document.getElementById('prevBtn').disabled = currentSlide === 1;
+            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
+
+            const progress = (currentSlide / totalSlides) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+
+            setTimeout(initCharts, 100);
+            window.scrollTo(0, 0);
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') previousSlide();
+        });
+
+        const chartInstances = {};
+
+        function initCharts() {
+            if (!chartInstances['chartSegmentacion'] && document.getElementById('chartSegmentacion')?.getContext('2d')) {
+                chartInstances['chartSegmentacion'] = new Chart(document.getElementById('chartSegmentacion'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Arq. Efímera', 'Proy. Especiales', 'Eventos Propios', 'Internacionales'],
+                        datasets: [{
+                            data: [53, 26, 11, 10],
+                            backgroundColor: ['#B71C1C', '#1565C0', '#D4AF37', '#00695C'],
+                            borderWidth: 3,
+                            borderColor: '#FFFFFF'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { font: { size: 12, weight: '600' }, padding: 20 } }
+                        }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartFinanciamiento'] && document.getElementById('chartFinanciamiento')?.getContext('2d')) {
+                chartInstances['chartFinanciamiento'] = new Chart(document.getElementById('chartFinanciamiento'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['40% con Anticipo 60%', '60% Crédito 60 días'],
+                        datasets: [{
+                            data: [40, 60],
+                            backgroundColor: ['#1565C0', '#E0E0E0'],
+                            borderWidth: 3,
+                            borderColor: '#FFFFFF'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { position: 'bottom', labels: { font: { size: 12, weight: '600' }, padding: 20 } } }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartComerciales'] && document.getElementById('chartComerciales')?.getContext('2d')) {
+                chartInstances['chartComerciales'] = new Chart(document.getElementById('chartComerciales'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Diana S.', 'Sergio R.', 'Gerencia', 'Giuseppe'],
+                        datasets: [
+                            { label: 'Utilidad ($MM)', data: [1.3, 0.8, 0.45, 0.25], backgroundColor: '#00695C', borderRadius: 6 },
+                            { label: 'Costo ($MM)', data: [1.1, 1.2, 0.55, 0.7], backgroundColor: '#E0E0E0', borderRadius: 6 }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true, ticks: { callback: (v) => '$' + v, font: { weight: '600' } } },
+                            x: { ticks: { font: { weight: '600' } } }
+                        },
+                        plugins: { legend: { position: 'bottom', labels: { font: { size: 11, weight: '600' }, padding: 15 } } }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartGastosConIExpo'] && document.getElementById('chartGastosConIExpo')?.getContext('2d')) {
+                chartInstances['chartGastosConIExpo'] = new Chart(document.getElementById('chartGastosConIExpo'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Nómina 60%', 'Fin Gtos 8%', 'Arriendo 8%', 'Vigilancia 6%', 'Otros 18%'],
+                        datasets: [{
+                            data: [60, 8, 8, 6, 18],
+                            backgroundColor: ['#B71C1C', '#1565C0', '#D4AF37', '#00695C', '#E0E0E0'],
+                            borderWidth: 2,
+                            borderColor: '#FFFFFF'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { position: 'bottom', labels: { font: { size: 9, weight: '600' }, padding: 10 } } }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartGastosSinIExpo'] && document.getElementById('chartGastosSinIExpo')?.getContext('2d')) {
+                chartInstances['chartGastosSinIExpo'] = new Chart(document.getElementById('chartGastosSinIExpo'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Nómina 73%', 'Arriendo 11%', 'Honorarios 6%', 'Vigilancia 4%', 'Otros 6%'],
+                        datasets: [{
+                            data: [73, 11, 6, 4, 6],
+                            backgroundColor: ['#00695C', '#D4AF37', '#1565C0', '#B71C1C', '#E0E0E0'],
+                            borderWidth: 2,
+                            borderColor: '#FFFFFF'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { position: 'bottom', labels: { font: { size: 9, weight: '600' }, padding: 10 } } }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartPyL'] && document.getElementById('chartPyL')?.getContext('2d')) {
+                chartInstances['chartPyL'] = new Chart(document.getElementById('chartPyL'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Ingresos', 'Costo', 'Util Bruta', 'Gastos Op', 'Util Neta'],
+                        datasets: [{
+                            label: 'Millones $',
+                            data: [9.324, 5.163, 4.161, 3.036, 1.125],
+                            backgroundColor: ['#1565C0', '#B71C1C', '#00695C', '#E65100', '#2E7D32'],
+                            borderRadius: 6,
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true, ticks: { callback: (v) => '$' + v + 'B', font: { weight: '600' } } },
+                            x: { ticks: { font: { weight: '600' } } }
+                        },
+                        plugins: { legend: { display: true, labels: { font: { size: 12, weight: '600' }, padding: 15 } } }
+                    }
+                });
+            }
+        }
+
+        showSlide(currentSlide);
+
+        // Variables globales para descarga de PDF manual
+        let pdfDocument = null;
+        let slidesCapturadas = 0;
+        const slidesEnPDF = new Set();
+
+        // Función para capturar slide actual al PDF
+        async function downloadPDF() {
+            const btn = document.querySelector('.download-btn');
+            
+            // Si ya fue capturada esta slide, no capturar de nuevo
+            if (slidesEnPDF.has(currentSlide)) {
+                alert(`Slide ${currentSlide} ya fue capturada. Ve a otra slide.`);
+                return;
+            }
+            
+            try {
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Capturando...';
+                btn.disabled = true;
+
+                // Inicializar PDF si es la primera slide
+                if (!pdfDocument) {
+                    const { jsPDF } = window.jspdf;
+                    pdfDocument = new jsPDF({
+                        orientation: 'landscape',
+                        unit: 'mm',
+                        format: 'a4'
+                    });
+                }
+                
+                // Capturar slide actual (la que se ve en pantalla)
+                let slideElement = document.querySelector('.slide.active');
+                
+                if (!slideElement) {
+                    throw new Error('No slide visible');
+                }
+                
+                // Esperar a que se renderice completamente
+                await new Promise(r => setTimeout(r, 1200));
+                
+                // Clonar el slide para no modificar el original
+                slideElement = slideElement.cloneNode(true);
+                
+                // Crear un contenedor temporal invisible
+                const tempContainer = document.createElement('div');
+                tempContainer.style.position = 'fixed';
+                tempContainer.style.left = '-9999px';
+                tempContainer.style.top = '-9999px';
+                tempContainer.style.width = '1920px';
+                tempContainer.style.height = '1080px';
+                tempContainer.appendChild(slideElement);
+                document.body.appendChild(tempContainer);
+                
+                // Esperar a que se renderice
+                await new Promise(r => setTimeout(r, 500));
+                
+                // Captura con máxima calidad y sin filtros
+                const canvas = await html2canvas(slideElement, {
+                    scale: 2,
+                    allowTaint: true,
+                    useCORS: true,
+                    backgroundColor: '#ffffff',
+                    removeContainer: false,
+                    logging: false,
+                    imageTimeout: 30000,
+                    windowHeight: 1080,
+                    windowWidth: 1920,
+                    ignoreElements: function(element) {
+                        return element.classList && element.classList.contains('nav-controls');
+                    }
+                });
+                
+                // Limpiar elemento temporal
+                document.body.removeChild(tempContainer);
+                
+                const imgData = canvas.toDataURL('image/png', 1.0);
+                const pageWidth = 297;
+                const pageHeight = 210;
+                
+                const imgWidth = pageWidth - 4;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                
+                // Agregar página si no es la primera
+                if (slidesCapturadas > 0) {
+                    pdfDocument.addPage([pageWidth, pageHeight]);
+                }
+                
+                // Centrar verticalmente
+                const yOffset = Math.max(2, (pageHeight - imgHeight) / 2);
+                pdfDocument.addImage(imgData, 'PNG', 2, yOffset, imgWidth, imgHeight);
+                
+                // Registrar que esta slide fue capturada
+                slidesEnPDF.add(currentSlide);
+                slidesCapturadas++;
+                
+                console.log(`✓ Slide ${currentSlide} capturada (${slidesCapturadas}/13)`);
+                
+                // Si tenemos 13 slides, descargar automáticamente
+                if (slidesCapturadas === 13) {
+                    await new Promise(r => setTimeout(r, 500));
+                    pdfDocument.save('INTER_EXPO_Presentacion_2026.pdf');
+                    
+                    // Resetear variables
+                    pdfDocument = null;
+                    slidesCapturadas = 0;
+                    slidesEnPDF.clear();
+                    
+                    btn.innerHTML = '<i class="fas fa-download"></i> PDF';
+                    btn.disabled = false;
+                    
+                    alert('✓ PDF descargado correctamente con todas las 13 slides');
+                    return;
+                }
+                
+                // Mostrar estado
+                btn.innerHTML = `<i class="fas fa-download"></i> PDF (${slidesCapturadas}/13)`;
+                btn.disabled = false;
+                
+            } catch (error) {
+                console.error('Error capturando slide:', error);
+                
+                btn.innerHTML = '<i class="fas fa-download"></i> PDF';
+                btn.disabled = false;
+                
+                alert('Error capturando slide. Intenta nuevamente.');
+            }
+        }
+        
+        // Función para resetear la descarga de PDF si es necesario
+        function resetearPDF() {
+            if (slidesCapturadas > 0) {
+                const confirmar = confirm(`Ya capturaste ${slidesCapturadas} slides. ¿Descartar y comenzar de nuevo?`);
+                if (confirmar) {
+                    pdfDocument = null;
+                    slidesCapturadas = 0;
+                    slidesEnPDF.clear();
+                    document.querySelector('.download-btn').innerHTML = '<i class="fas fa-download"></i> PDF';
+                    document.querySelector('.download-btn').disabled = false;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
