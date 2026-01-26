@@ -113,7 +113,7 @@
         .slide-content {
             width: 100%;
             height: 100%;
-            padding: 80px 40px 60px 40px;
+            padding: 120px 40px 60px 40px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -521,7 +521,7 @@
 
         @media (max-width: 1024px) {
             .slide-content { 
-                padding: 100px 35px 80px 35px;
+                padding: 120px 35px 80px 35px;
                 max-height: calc(100vh - 200px);
             }
             .slide-header { padding: 30px 35px; }
@@ -535,7 +535,7 @@
 
         @media (max-width: 768px) {
             .slide-content { 
-                padding: 100px 18px 80px 18px;
+                padding: 120px 18px 80px 18px;
                 max-height: calc(100vh - 160px);
                 justify-content: flex-start;
             }
@@ -587,7 +587,7 @@
 
         @media (max-width: 480px) {
             .slide-content {
-                padding: 90px 12px 70px 12px;
+                padding: 120px 12px 70px 12px;
                 max-height: calc(100vh - 140px);
             }
             .slide-header { 
@@ -626,9 +626,9 @@
 <body>
 
     <!-- SLIDE 1: PORTADA -->
-    <div class="slide brand active">
+    <div class="slide brand active" style="background: #FFFFFF;">
         <div class="slide-content">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgI_dzFGgOEV_u1ShOG3jtpTt7UfcgOEcHgw&s" alt="INTER EXPO Logo" style="width: 220px; height: auto; margin-bottom: 40px; margin-top: -40px;">
+            <img src="https://i.postimg.cc/Bv3TLkZm/273bac4e-e685-45f8-b020-92260edcb7e8.jpg" alt="INTER EXPO Logo" style="width: 350px; height: auto; margin-bottom: 40px; margin-top: -40px; margin-left: auto; margin-right: auto; display: block;">
             <h1 class="main-title" style="color: #1a1a1a;">INTER EXPO</h1>
             <h2 class="main-subtitle" style="color: var(--primary);">Plan Estratégico Corporativo 2026</h2>
             <div class="divider"></div>
@@ -649,7 +649,10 @@
     <!-- SLIDE 2: EXECUTIVE SUMMARY -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Síntesis Ejecutiva 2026</h2>
+            <div>
+                <h2>Síntesis Ejecutiva 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">INTRODUCCION</p>
+            </div>
             <span class="slide-number">2</span>
         </div>
         <div class="slide-content">
@@ -700,14 +703,17 @@
         <div class="slide-footer">
             <span>Página 2</span>
             <div class="footer-sep"></div>
-            <span><i class="fas fa-circle" style="color: var(--primary); font-size: 0.6rem;"></i> KPIs Principales</span>
+            <span>INTRODUCCION</span>
         </div>
     </div>
 
     <!-- SLIDE 3: DIAGNÓSTICO MERCADO -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Diagnóstico del Mercado</h2>
+            <div>
+                <h2>Diagnóstico del Mercado</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">COMPORTAMIENTO MERCADO - 2026</p>
+            </div>
             <span class="slide-number">3</span>
         </div>
         <div class="slide-content">
@@ -743,13 +749,18 @@
         </div>
         <div class="slide-footer">
             <span>Página 3</span>
+            <div class="footer-sep"></div>
+            <span>COMPORTAMIENTO MERCADO - 2026</span>
         </div>
     </div>
 
     <!-- SLIDE 4: OBJETIVOS ESTRATÉGICOS -->
     <div class="slide dark">
         <div class="slide-header" style="border-bottom-color: rgba(255, 255, 255, 0.2);">
-            <h2 style="color: white;">Pilares Estratégicos 2026</h2>
+            <div>
+                <h2 style="color: white;">Pilares Estratégicos 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--accent); margin-top: 12px; font-weight: 600;">OPTIMIZACION PROYECTADA</p>
+            </div>
             <span class="slide-number" style="color: var(--accent);">4</span>
         </div>
         <div class="slide-content">
@@ -796,13 +807,18 @@
         </div>
         <div class="slide-footer" style="color: #999;">
             <span>Página 4</span>
+            <div class="footer-sep"></div>
+            <span>OPTIMIZACION PROYECTADA</span>
         </div>
     </div>
 
     <!-- SLIDE 5: PROYECCIÓN INGRESOS -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Proyección de Ingresos 2026</h2>
+            <div>
+                <h2>Proyección de Ingresos 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">PROYECCION DE VENTAS 2026</p>
+            </div>
             <span class="slide-number">5</span>
         </div>
         <div class="slide-content">
@@ -847,13 +863,18 @@
         </div>
         <div class="slide-footer">
             <span>Página 5</span>
+            <div class="footer-sep"></div>
+            <span>PROYECCION DE VENTAS 2026</span>
         </div>
     </div>
 
     <!-- SLIDE 6: FINANCIAMIENTO -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Estructura de Financiamiento</h2>
+            <div>
+                <h2>Estructura de Financiamiento</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">CLASIFICACION DE VENTAS POR TIPO DE EVENTO</p>
+            </div>
             <span class="slide-number">6</span>
         </div>
         <div class="slide-content">
@@ -890,13 +911,18 @@
         </div>
         <div class="slide-footer">
             <span>Página 6</span>
+            <div class="footer-sep"></div>
+            <span>CLASIFICACION DE VENTAS POR TIPO DE EVENTO</span>
         </div>
     </div>
 
     <!-- SLIDE 7: RENTABILIDAD COMERCIAL -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Análisis de Rentabilidad por Comercial</h2>
+            <div>
+                <h2>Análisis de Rentabilidad por Comercial</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">CLASIFICACION DE VENTAS POR COMERCIAL</p>
+            </div>
             <span class="slide-number">7</span>
         </div>
         <div class="slide-content">
@@ -951,13 +977,18 @@
         </div>
         <div class="slide-footer">
             <span>Página 7</span>
+            <div class="footer-sep"></div>
+            <span>CLASIFICACION DE VENTAS POR COMERCIAL</span>
         </div>
     </div>
 
     <!-- SLIDE 8: ANÁLISIS GASTOS -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Estructura de Costos Operativos</h2>
+            <div>
+                <h2>Estructura de Costos Operativos</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">PROYECCION DE COSTOS 2026</p>
+            </div>
             <span class="slide-number">8</span>
         </div>
         <div class="slide-content">
@@ -1040,13 +1071,18 @@
         </div>
         <div class="slide-footer">
             <span>Página 8</span>
+            <div class="footer-sep"></div>
+            <span>PROYECCION DE COSTOS 2026</span>
         </div>
     </div>
 
     <!-- SLIDE 9: P&L -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Proyección Financiera 2026</h2>
+            <div>
+                <h2>Proyección Financiera 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">UTILIDAD POR COMERCIAL | GASTOS FIJOS PROYECTADOS 2026</p>
+            </div>
             <span class="slide-number">9</span>
         </div>
         <div class="slide-content">
@@ -1106,13 +1142,18 @@
         </div>
         <div class="slide-footer">
             <span>Página 9</span>
+            <div class="footer-sep"></div>
+            <span>UTILIDAD POR COMERCIAL | GASTOS FIJOS PROYECTADOS 2026</span>
         </div>
     </div>
 
     <!-- SLIDE 10: ALERTA -->
     <div class="slide dark" style="background: linear-gradient(135deg, #5D2C2C 0%, var(--bg-dark) 100%);">
         <div class="slide-header" style="border-bottom-color: rgba(255, 255, 255, 0.2);">
-            <h2 style="color: #FF8A80;"><i class="fas fa-exclamation-triangle"></i> ALERTA CRÍTICA</h2>
+            <div>
+                <h2 style="color: #FF8A80;"><i class="fas fa-exclamation-triangle"></i> ALERTA CRÍTICA</h2>
+                <p style="font-size: 0.85rem; color: var(--accent); margin-top: 12px; font-weight: 600;">FLUJO DE CAJA</p>
+            </div>
             <span class="slide-number" style="color: #FF8A80;">10</span>
         </div>
         <div class="slide-content" style="text-align: center;">
@@ -1158,13 +1199,18 @@
         </div>
         <div class="slide-footer" style="color: #999;">
             <span>Página 10</span>
+            <div class="footer-sep"></div>
+            <span>FLUJO DE CAJA</span>
         </div>
     </div>
 
     <!-- SLIDE 11: ADDED VALUE -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Estrategia Competitiva: ADDED VALUE</h2>
+            <div>
+                <h2>Estrategia Competitiva: ADDED VALUE</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">ESTADO DE GANANCIAS PROYECTADO 2026</p>
+            </div>
             <span class="slide-number">11</span>
         </div>
         <div class="slide-content">
@@ -1238,13 +1284,18 @@
         </div>
         <div class="slide-footer">
             <span>Página 11</span>
+            <div class="footer-sep"></div>
+            <span>ESTADO DE GANANCIAS PROYECTADO 2026</span>
         </div>
     </div>
 
     <!-- SLIDE 12: PLAN ACCIÓN -->
     <div class="slide light">
         <div class="slide-header">
-            <h2>Plan de Acción 2026</h2>
+            <div>
+                <h2>Plan de Acción 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">ESTADO DE GANANCIAS PROYECTADO 2026</p>
+            </div>
             <span class="slide-number">12</span>
         </div>
         <div class="slide-content">
@@ -1298,6 +1349,8 @@
         </div>
         <div class="slide-footer">
             <span>Página 12</span>
+            <div class="footer-sep"></div>
+            <span>ESTADO DE GANANCIAS PROYECTADO 2026</span>
         </div>
     </div>
 
@@ -1348,24 +1401,150 @@
         <div class="slide-footer" style="color: #666;">
             <span>Página 13</span>
             <div class="footer-sep" style="background: rgba(0,0,0,0.1);"></div>
-            <span style="color: var(--accent);">Confidencial</span>
+            <span style="color: var(--accent);">ESTADO DE GANANCIAS PROYECTADO 2026</span>
         </div>
     </div>
 
-    <!-- NAVIGATION -->
-    <div class="nav-controls">
-        <button class="nav-btn" id="prevBtn" onclick="previousSlide()">
-            <i class="fas fa-chevron-left"></i> ANTERIOR
-        </button>
-        <div class="page-indicator">
-            <span id="currentSlide">1</span> / <span id="totalSlides">13</span>
+    <!-- SLIDE 14: GLOSARIO PARTE 1 -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Glosario de Términos - Parte 1</h2>
+            <span class="slide-number">14</span>
         </div>
-        <button class="download-btn" onclick="downloadPDF()" title="Descargar presentación en PDF">
-            <i class="fas fa-download"></i> PDF
-        </button>
-        <button class="nav-btn" id="nextBtn" onclick="nextSlide()">
-            SIGUIENTE <i class="fas fa-chevron-right"></i>
-        </button>
+        <div class="slide-content">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; overflow-y: auto; height: 100%;">
+                <!-- COLUMNA 1: CONCEPTOS FINANCIEROS -->
+                <div>
+                    <h3 class="section-title"><i class="fas fa-chart-line"></i> Conceptos Financieros</h3>
+                    <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 28px;">
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Margen Bruto</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Porcentaje de ganancia después de restar costos de producción directos (materia prima y mano de obra)</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Margen Operacional</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Utilidad operativa después de restar gastos administrativos y de venta</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Margen Neto</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Ganancia final después de todos los gastos, impuestos y amortizaciones</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">ROI (Return on Investment)</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Retorno sobre Inversión - ganancia generada por cada peso invertido en el proyecto</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">CAPEX</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Capital Expenditure - inversión en activos fijos, infraestructura y mejoras duraderas</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">KPI (Key Performance Indicator)</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Indicador Clave de Desempeño - métrica que mide el éxito de objetivos operacionales</span>
+                        </div>
+                        <div>
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Flujo de Caja</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Movimiento de dinero efectivo que entra y sale de la empresa en un periodo determinado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA 2: TÉRMINOS OPERACIONALES -->
+                <div>
+                    <h3 class="section-title"><i class="fas fa-cogs"></i> Términos Operacionales</h3>
+                    <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 28px;">
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Arquitectura Efímera</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Estructuras temporales y modulares diseñadas para ferias, congresos, eventos y exposiciones</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Proyectos Especiales</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Soluciones personalizadas y únicas diseñadas según requerimientos específicos del cliente</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Capital de Trabajo</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Efectivo disponible para financiar operaciones cotidianas y obligaciones a corto plazo</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Ciclo de Capital</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Tiempo transcurrido desde el pago a proveedores hasta el cobro de clientes</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Anticipos Comerciales</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Porcentaje del total que el cliente paga antes de iniciar el proyecto o evento</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Plazo Comercial</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Número de días otorgados al cliente para pagar la factura después del evento</span>
+                        </div>
+                        <div>
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Línea de Crédito</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Monto de dinero que una entidad financiera pone disponible para la empresa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 14</span>
+            <div class="footer-sep"></div>
+            <span><i class="fas fa-book" style="color: var(--primary); font-size: 0.6rem;"></i> Glosario - Parte 1</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 15: GLOSARIO PARTE 2 -->
+    <div class="slide light">
+        <div class="slide-header">
+            <h2>Glosario de Términos - Parte 2</h2>
+            <span class="slide-number">15</span>
+        </div>
+        <div class="slide-content">
+            <div style="margin-top: 20px;">
+                <h3 class="section-title"><i class="fas fa-star"></i> Conceptos Estratégicos</h3>
+                <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+                    <div style="display: flex; flex-direction: column; gap: 28px;">
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">ESG (Environmental, Social, Governance)</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Criterios Ambientales, Sociales y de Gobernanza que evalúan sostenibilidad empresarial</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Huella de Carbono</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Medida del impacto ambiental total de un producto o servicio en toneladas de CO2</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Diferenciación</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Estrategia de crear un producto o servicio único que se destaque de la competencia</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Segmentación</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">División del mercado en grupos de clientes con características y necesidades similares</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 28px;">
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Penetración de Mercado</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Porcentaje del mercado potencial que la empresa ha conquistado con sus productos</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Ventaja Competitiva</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Características que hacen que una empresa sea superior a sus competidores</span>
+                        </div>
+                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Portfolio/Cartera</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Conjunto de productos y servicios que ofrece la empresa a sus clientes</span>
+                        </div>
+                        <div style="padding-bottom: 20px;">
+                            <strong style="color: var(--primary); font-size: 1.05rem;">Rentabilidad</strong><br>
+                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Capacidad de generar ganancias o beneficio en relación a los recursos invertidos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 15</span>
+            <div class="footer-sep"></div>
+            <span><i class="fas fa-book" style="color: var(--primary); font-size: 0.6rem;"></i> Glosario - Parte 2</span>
+        </div>
     </div>
 
     <!-- PROGRESS BAR -->
@@ -1374,7 +1553,6 @@
     <script>
         let currentSlide = 1;
         const totalSlides = document.querySelectorAll('.slide').length;
-        document.getElementById('totalSlides').textContent = totalSlides;
 
         function showSlide(n) {
             const slides = document.querySelectorAll('.slide');
@@ -1390,12 +1568,11 @@
             slides[currentSlide - 1].classList.add('active');
             slides[currentSlide - 1].style.display = 'flex';
 
-            document.getElementById('currentSlide').textContent = currentSlide;
-            document.getElementById('prevBtn').disabled = currentSlide === 1;
-            document.getElementById('nextBtn').disabled = currentSlide === totalSlides;
-
-            const progress = (currentSlide / totalSlides) * 100;
-            document.getElementById('progressBar').style.width = progress + '%';
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                const progress = (currentSlide / totalSlides) * 100;
+                progressBar.style.width = progress + '%';
+            }
 
             setTimeout(initCharts, 100);
             window.scrollTo(0, 0);
@@ -1554,147 +1731,6 @@
         }
 
         showSlide(currentSlide);
-
-        // Variables globales para descarga de PDF manual
-        let pdfDocument = null;
-        let slidesCapturadas = 0;
-        const slidesEnPDF = new Set();
-
-        // Función para capturar slide actual al PDF
-        async function downloadPDF() {
-            const btn = document.querySelector('.download-btn');
-            
-            // Si ya fue capturada esta slide, no capturar de nuevo
-            if (slidesEnPDF.has(currentSlide)) {
-                alert(`Slide ${currentSlide} ya fue capturada. Ve a otra slide.`);
-                return;
-            }
-            
-            try {
-                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Capturando...';
-                btn.disabled = true;
-
-                // Inicializar PDF si es la primera slide
-                if (!pdfDocument) {
-                    const { jsPDF } = window.jspdf;
-                    pdfDocument = new jsPDF({
-                        orientation: 'landscape',
-                        unit: 'mm',
-                        format: 'a4'
-                    });
-                }
-                
-                // Capturar slide actual (la que se ve en pantalla)
-                let slideElement = document.querySelector('.slide.active');
-                
-                if (!slideElement) {
-                    throw new Error('No slide visible');
-                }
-                
-                // Esperar a que se renderice completamente
-                await new Promise(r => setTimeout(r, 1200));
-                
-                // Clonar el slide para no modificar el original
-                slideElement = slideElement.cloneNode(true);
-                
-                // Crear un contenedor temporal invisible
-                const tempContainer = document.createElement('div');
-                tempContainer.style.position = 'fixed';
-                tempContainer.style.left = '-9999px';
-                tempContainer.style.top = '-9999px';
-                tempContainer.style.width = '1920px';
-                tempContainer.style.height = '1080px';
-                tempContainer.appendChild(slideElement);
-                document.body.appendChild(tempContainer);
-                
-                // Esperar a que se renderice
-                await new Promise(r => setTimeout(r, 500));
-                
-                // Captura con máxima calidad y sin filtros
-                const canvas = await html2canvas(slideElement, {
-                    scale: 2,
-                    allowTaint: true,
-                    useCORS: true,
-                    backgroundColor: '#ffffff',
-                    removeContainer: false,
-                    logging: false,
-                    imageTimeout: 30000,
-                    windowHeight: 1080,
-                    windowWidth: 1920,
-                    ignoreElements: function(element) {
-                        return element.classList && element.classList.contains('nav-controls');
-                    }
-                });
-                
-                // Limpiar elemento temporal
-                document.body.removeChild(tempContainer);
-                
-                const imgData = canvas.toDataURL('image/png', 1.0);
-                const pageWidth = 297;
-                const pageHeight = 210;
-                
-                const imgWidth = pageWidth - 4;
-                const imgHeight = (canvas.height * imgWidth) / canvas.width;
-                
-                // Agregar página si no es la primera
-                if (slidesCapturadas > 0) {
-                    pdfDocument.addPage([pageWidth, pageHeight]);
-                }
-                
-                // Centrar verticalmente
-                const yOffset = Math.max(2, (pageHeight - imgHeight) / 2);
-                pdfDocument.addImage(imgData, 'PNG', 2, yOffset, imgWidth, imgHeight);
-                
-                // Registrar que esta slide fue capturada
-                slidesEnPDF.add(currentSlide);
-                slidesCapturadas++;
-                
-                console.log(`✓ Slide ${currentSlide} capturada (${slidesCapturadas}/13)`);
-                
-                // Si tenemos 13 slides, descargar automáticamente
-                if (slidesCapturadas === 13) {
-                    await new Promise(r => setTimeout(r, 500));
-                    pdfDocument.save('INTER_EXPO_Presentacion_2026.pdf');
-                    
-                    // Resetear variables
-                    pdfDocument = null;
-                    slidesCapturadas = 0;
-                    slidesEnPDF.clear();
-                    
-                    btn.innerHTML = '<i class="fas fa-download"></i> PDF';
-                    btn.disabled = false;
-                    
-                    alert('✓ PDF descargado correctamente con todas las 13 slides');
-                    return;
-                }
-                
-                // Mostrar estado
-                btn.innerHTML = `<i class="fas fa-download"></i> PDF (${slidesCapturadas}/13)`;
-                btn.disabled = false;
-                
-            } catch (error) {
-                console.error('Error capturando slide:', error);
-                
-                btn.innerHTML = '<i class="fas fa-download"></i> PDF';
-                btn.disabled = false;
-                
-                alert('Error capturando slide. Intenta nuevamente.');
-            }
-        }
-        
-        // Función para resetear la descarga de PDF si es necesario
-        function resetearPDF() {
-            if (slidesCapturadas > 0) {
-                const confirmar = confirm(`Ya capturaste ${slidesCapturadas} slides. ¿Descartar y comenzar de nuevo?`);
-                if (confirmar) {
-                    pdfDocument = null;
-                    slidesCapturadas = 0;
-                    slidesEnPDF.clear();
-                    document.querySelector('.download-btn').innerHTML = '<i class="fas fa-download"></i> PDF';
-                    document.querySelector('.download-btn').disabled = false;
-                }
-            }
-        }
     </script>
 </body>
 </html>
