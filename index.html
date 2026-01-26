@@ -82,7 +82,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid rgba(183, 28, 28, 0.2);
+            border-bottom: none;
             z-index: 10;
         }
 
@@ -656,48 +656,16 @@
             <span class="slide-number">2</span>
         </div>
         <div class="slide-content">
-            <div class="grid-4">
-                <div class="stat-box">
-                    <div class="stat-label">Ingresos Proyectados</div>
-                    <div class="stat-number">$9.3B</div>
-                    <div class="stat-label" style="color: var(--success);">↑ 12% vs 2025</div>
-                </div>
-                <div class="stat-box success">
-                    <div class="stat-label">Utilidad Neta</div>
-                    <div class="stat-number">$1.1B</div>
-                    <div class="stat-label" style="color: var(--success);">12.1% Margen</div>
-                </div>
-                <div class="stat-box warning">
-                    <div class="stat-label">Gastos Operativos</div>
-                    <div class="stat-number">$2.3B</div>
-                    <div class="stat-label">Escenario Optimizado</div>
-                </div>
-                <div class="stat-box info">
-                    <div class="stat-label">ROI Esperado</div>
-                    <div class="stat-number">18.5%</div>
-                    <div class="stat-label">Proyectado Anual</div>
-                </div>
-            </div>
-
-            <div class="grid-2" style="margin-top: 40px;">
-                <div class="card">
-                    <h3 class="card-title">📊 Desempeño Operacional</h3>
-                    <ul class="content-list" style="margin-top: 15px;">
-                        <li>Ventas distribuidas en 4 líneas de negocio estratégicas</li>
-                        <li>Arquitectura Efímera: <span class="highlight">53%</span> portafolio principal</li>
-                        <li>Proyectos Especiales: <span class="highlight">26%</span> ingresos base</li>
-                        <li>Margen operacional objetivo: <span class="highlight">35%+</span></li>
-                    </ul>
-                </div>
-                <div class="card accent">
-                    <h3 class="card-title" style="color: var(--accent);">⚠️ Desafíos Críticos</h3>
-                    <ul class="content-list" style="margin-top: 15px;">
-                        <li>Capital de trabajo: <span class="highlight">$0 MM</span> disponible</li>
-                        <li>60% ventas modalidad crédito 60 días</li>
-                        <li>Competencia informal en aumento regional</li>
-                        <li>Optimización agresiva de costos requerida</li>
-                    </ul>
-                </div>
+            <div style="padding: 40px 60px; color: var(--text-dark); line-height: 1.9; font-size: 1.05rem; max-width: 1000px; margin: 0 auto;">
+                <p style="margin-bottom: 30px; text-align: justify;">
+                    Este informe tiene como objetivo mostrar la proyección del año 2026 de nuestra Compañía, en donde se debe tener en cuenta la situación actual del mercado con todos los actores relevantes que afectan nuestro sector. Es necesario que todos los equipos de trabajo con los cuales cuenta la compañía se comprometan para que INTE EXPO SAS cumpla con las metas propuestas por la dirección.
+                </p>
+                <p style="margin-bottom: 30px; text-align: justify;">
+                    Es importante destacar que nuestro sector ha sufrido varios cambios en los últimos 5 años, los cuales han generado caídas en las ventas y una significativa baja en las utilidades del negocio. Esto debido a la competencia de empresas informales, el manejo del gobierno con relación a la corrupción la cual nos ha tocado directamente. Es claro que nuestro negocio está empezando a verse muy afectado por la mal llamada economía circular que no es más que una economía informal la cual genera competencias desleales al momento de generar precios de venta de los productos.
+                </p>
+                <p style="text-align: justify;">
+                    Por consiguiente y ante nuestra situación actual, en un esfuerzo conjunto y coordinado, trataremos de mantener la compañía optimizada con relación a los gastos fijos, buscando obtener una mayor rentabilidad para estabilizar el flujo de caja de la compañía.
+                </p>
             </div>
         </div>
         <div class="slide-footer">
@@ -716,35 +684,90 @@
             </div>
             <span class="slide-number">3</span>
         </div>
-        <div class="slide-content">
-            <div class="grid-2">
-                <div>
-                    <h3 class="section-title"><i class="fas fa-chart-line"></i> Tendencias del Sector</h3>
-                    <ul class="content-list">
-                        <li>Caída de ventas en últimos <span class="highlight">5 años</span> consecutivos</li>
-                        <li>Disminución significativa de utilidades netas</li>
-                        <li>Competencia informal y economía circular impactando</li>
-                        <li>Recintos feriales con ofertas integradas agresivas</li>
-                        <li>Corrupción gubernamental impacto directo</li>
-                        <li>Costos materia prima en aumento constante</li>
-                    </ul>
+        <div class="slide-content" style="overflow-y: auto; max-height: calc(100vh - 180px);">
+            <div style="padding: 0 40px; color: var(--text-dark); line-height: 1.85; font-size: 0.93rem;">
+                <!-- Sección de contexto -->
+                <div style="background: linear-gradient(135deg, rgba(183, 28, 28, 0.08) 0%, rgba(21, 101, 192, 0.08) 100%); padding: 25px 25px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid var(--primary);">
+                    <p style="margin-bottom: 15px; text-align: justify;">
+                        <strong><i class="fas fa-chart-line" style="color: var(--primary); margin-right: 8px;"></i>Contexto del Mercado:</strong> Teniendo en cuenta que el desarrollo del mercado interno cada día es diferente y siendo congruentes con la situación del país con relación al desorden económico en el cual estamos, el mercado en el cual se interactúa y la informalidad en la cual esta nuestro sector; la proyección en las ventas para el 2026 se pronostica como cambiante y debemos enfocarnos en potencializar nuestras fortalezas para poder competir.
+                    </p>
+                    <p style="text-align: justify;">
+                        Si bien es cierto que los recintos feriales se quieren apoderar de nuestro negocio ofreciéndole a los clientes un paquete integral para las participaciones en ferias, el mercado aun es muy grande para poder cumplir con la meta comercial propuesta. Hoy es más complicado mantener una utilidad digna para la compañía lo que genera a su vez un mayor esfuerzo para mantener puntos de equilibrio y utilidades para los socios en determinadas negociaciones.
+                    </p>
                 </div>
-                <div>
-                    <h3 class="section-title"><i class="fas fa-target"></i> Oportunidades 2026</h3>
-                    <ul class="content-list">
-                        <li>Diferenciación vía diseño disruptivo reutilizable</li>
-                        <li>Certificaciones ambientales (Huella de Carbono)</li>
-                        <li>Alianzas estratégicas "Lápiz de Acero"</li>
-                        <li>Renovación integral mobiliario corporativo</li>
-                        <li>Enfoque en segmentos premium mercado</li>
-                        <li>Expansión internacional selectiva (10% cartera)</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="alert danger" style="margin-top: 30px;">
-                <strong><i class="fas fa-exclamation-circle"></i> Crítico:</strong> 
-                Desafíos estructurales requieren decisiones estratégicas inmediatas para mantener viabilidad en 2026
+                <!-- Llamada a la acción -->
+                <div style="background: var(--bg-light); padding: 20px 25px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid var(--accent); text-align: center;">
+                    <p style="margin: 0; font-size: 1.05rem; font-weight: 600; color: var(--primary);">
+                        ⭐ Inter Expo debe vender con un <strong>ADDED VALUE</strong> para ser contundente
+                    </p>
+                </div>
+
+                <!-- 3 Pilares -->
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--primary); font-weight: 700; margin-bottom: 18px; display: flex; align-items: center;">
+                        <i class="fas fa-bullseye" style="margin-right: 10px; font-size: 1.2rem;"></i>3 Aspectos Fundamentales para Ser Contundentes:
+                    </h4>
+                    
+                    <div style="display: grid; gap: 15px;">
+                        <div style="background: rgba(37, 137, 245, 0.08); padding: 18px; border-radius: 10px; border-left: 4px solid var(--secondary); position: relative;">
+                            <div style="display: flex; align-items: flex-start;">
+                                <div style="background: var(--secondary); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 12px; flex-shrink: 0; font-size: 0.85rem;">1</div>
+                                <div>
+                                    <h5 style="margin: 0 0 8px 0; color: var(--secondary); font-weight: 700;">Diseño Disruptivo Reutilizable</h5>
+                                    <p style="margin: 0; color: var(--text-dark); font-size: 0.92rem; line-height: 1.6;">Vender con un diseño disruptivo que se pueda aplicar para varias ferias y que el cliente pueda reutilizar inclusive en sus propias oficinas. Esto reflejará una optimización en los presupuestos de los clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(0, 105, 92, 0.08); padding: 18px; border-radius: 10px; border-left: 4px solid var(--success); position: relative;">
+                            <div style="display: flex; align-items: flex-start;">
+                                <div style="background: var(--success); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 12px; flex-shrink: 0; font-size: 0.85rem;">2</div>
+                                <div>
+                                    <h5 style="margin: 0 0 8px 0; color: var(--success); font-weight: 700;">Conciencia Ambiental</h5>
+                                    <p style="margin: 0; color: var(--text-dark); font-size: 0.92rem; line-height: 1.6;">Diseñar con conciencia hacia el medio ambiente y potencializar esta clase de diseños. Mostrarle al cliente que sin que le cueste más ayuda a no contaminar el planeta. Es importante afiliarnos a fundaciones o entidades que den certificados, reconocimientos y premios. Integrar a lápiz de acero para inventar un premio relacionado con este tema.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(230, 81, 0, 0.08); padding: 18px; border-radius: 10px; border-left: 4px solid var(--warning); position: relative;">
+                            <div style="display: flex; align-items: flex-start;">
+                                <div style="background: var(--warning); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 12px; flex-shrink: 0; font-size: 0.85rem;">3</div>
+                                <div>
+                                    <h5 style="margin: 0 0 8px 0; color: var(--warning); font-weight: 700;">Renovación de Mobiliario</h5>
+                                    <p style="margin: 0; color: var(--text-dark); font-size: 0.92rem; line-height: 1.6;">Invertir en nuevo mobiliario para la compañía ya que esto mejoraría notablemente el diseño en el mercado de ferias. Este mobiliario deberá ser escogido por la dirección general.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desafíos Financieros -->
+                <div style="background: linear-gradient(135deg, rgba(230, 81, 0, 0.1) 0%, rgba(230, 81, 0, 0.05) 100%); padding: 22px 25px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--warning);">
+                    <h4 style="color: var(--warning); font-weight: 700; margin: 0 0 12px 0; display: flex; align-items: center;">
+                        <i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i>Desafío de Flujo de Caja
+                    </h4>
+                    <p style="margin-bottom: 12px; text-align: justify; font-size: 0.93rem;">
+                        El comportamiento del mercado presenta un importante cambio: incremento en costos de materias primas y pago adelantado a proveedores afecta nuestro flujo de caja. En muchas ocasiones Inter Expo debe financiar a los clientes, quebrando la cadena de valor financiera.
+                    </p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.92rem;">
+                        <div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
+                            <div style="font-weight: 700; color: var(--warning); font-size: 1.1rem;">40%</div>
+                            <div style="color: var(--text-muted); font-size: 0.85rem;">Anticipos al 60%</div>
+                        </div>
+                        <div style="background: white; padding: 12px; border-radius: 8px; text-align: center;">
+                            <div style="font-weight: 700; color: var(--primary); font-size: 1.1rem;">60%</div>
+                            <div style="color: var(--text-muted); font-size: 0.85rem;">Crédito 60 días</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conclusión -->
+                <div style="background: linear-gradient(135deg, var(--primary) 0%, rgba(139, 0, 0, 0.8) 100%); padding: 22px 25px; border-radius: 12px; color: white; text-align: center;">
+                    <p style="margin: 0; font-style: italic; line-height: 1.7;">
+                        <i class="fas fa-lightbulb" style="margin-right: 8px;"></i>La compañía no volverá a ser igual que en años anteriores, pero haremos el mayor esfuerzo para que a la vista de clientes y competidores <strong>se vea mucho más fortalecida en el mercado.</strong>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="slide-footer">
@@ -754,58 +777,104 @@
         </div>
     </div>
 
-    <!-- SLIDE 4: OBJETIVOS ESTRATÉGICOS -->
-    <div class="slide dark">
-        <div class="slide-header" style="border-bottom-color: rgba(255, 255, 255, 0.2);">
+    <!-- SLIDE 4: OPTIMIZACIÓN PROYECTADA -->
+    <div class="slide light">
+        <div class="slide-header">
             <div>
-                <h2 style="color: white;">Pilares Estratégicos 2026</h2>
-                <p style="font-size: 0.85rem; color: var(--accent); margin-top: 12px; font-weight: 600;">OPTIMIZACION PROYECTADA</p>
+                <h2>Optimización Proyectada</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">PLAN DE OPTIMIZACION DE COSTOS</p>
             </div>
-            <span class="slide-number" style="color: var(--accent);">4</span>
+            <span class="slide-number">4</span>
         </div>
         <div class="slide-content">
-            <p style="text-align: center; font-size: 1.3rem; color: #CCC; margin-bottom: 50px;">
-                Tres ejes de transformación para recuperar rentabilidad
-            </p>
+            <div style="padding: 0 20px; margin-bottom: 20px;">
+                <p style="text-align: center; font-size: 1rem; color: var(--text-dark); font-weight: 600; margin: 0;">
+                    Para poder cumplir con la utilidad proyectada se requiere generar un plan de optimización de costos en los siguientes rubros:
+                </p>
+            </div>
 
-            <div class="grid-3">
-                <div class="card dark">
-                    <div style="text-align: center;">
-                        <i class="fas fa-tools" style="font-size: 2.8rem; color: var(--accent); margin-bottom: 15px;"></i>
-                        <h3 class="card-title" style="text-align: center; color: white;">OPTIMIZAR</h3>
+            <div class="grid-4" style="gap: 18px;">
+                <!-- NÓMINA -->
+                <div style="background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease; cursor: pointer;">
+                    <div style="background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%); padding: 18px; text-align: center; position: relative; color: white;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">👷</div>
+                        <h3 style="margin: 0; font-size: 1.1rem; font-weight: 700;">Nómina INTER EXPO</h3>
                     </div>
-                    <p style="text-align: center; color: #BBB; margin-top: 15px; line-height: 1.7;">
-                        Gastos fijos sin comprometer capacidad. Target: <span style="color: var(--success); font-weight: 700;">$2.3B</span>
-                    </p>
+                    <div style="padding: 22px 18px; text-align: center;">
+                        <div style="position: relative; margin-bottom: 15px;">
+                            <div style="background: #FF0000; color: white; display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 1.2rem;">
+                                -12%
+                            </div>
+                        </div>
+                        <p style="margin: 0; color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">
+                            DISMINUIR<br>NÓMINA
+                        </p>
+                    </div>
                 </div>
 
-                <div class="card dark">
-                    <div style="text-align: center;">
-                        <i class="fas fa-chart-area" style="font-size: 2.8rem; color: var(--secondary-light); margin-bottom: 15px;"></i>
-                        <h3 class="card-title" style="text-align: center; color: white;">ESTABILIZAR</h3>
+                <!-- VIGILANCIA -->
+                <div style="background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease; cursor: pointer;">
+                    <div style="background: linear-gradient(135deg, #7B1FA2 0%, #4A148C 100%); padding: 18px; text-align: center; position: relative; color: white;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">👮</div>
+                        <h3 style="margin: 0; font-size: 1.1rem; font-weight: 700;">Vigilancia INTER EXPO</h3>
                     </div>
-                    <p style="text-align: center; color: #BBB; margin-top: 15px; line-height: 1.7;">
-                        Flujo de caja mediante anticipos y mejora términos comerciales
-                    </p>
+                    <div style="padding: 22px 18px; text-align: center;">
+                        <div style="position: relative; margin-bottom: 15px;">
+                            <div style="background: #FF0000; color: white; display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 1.2rem;">
+                                -40%
+                            </div>
+                        </div>
+                        <p style="margin: 0; color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">
+                            DISMINUIR<br>VIGILANCIA
+                        </p>
+                    </div>
                 </div>
 
-                <div class="card dark">
-                    <div style="text-align: center;">
-                        <i class="fas fa-rocket" style="font-size: 2.8rem; color: var(--accent); margin-bottom: 15px;"></i>
-                        <h3 class="card-title" style="text-align: center; color: white;">CRECER</h3>
+                <!-- GASTOS FIJOS -->
+                <div style="background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease; cursor: pointer;">
+                    <div style="background: linear-gradient(135deg, #E65100 0%, #BF360C 100%); padding: 18px; text-align: center; position: relative; color: white;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">🔒</div>
+                        <h3 style="margin: 0; font-size: 1.1rem; font-weight: 700;">Costos Fijos INTER EXPO</h3>
                     </div>
-                    <p style="text-align: center; color: #BBB; margin-top: 15px; line-height: 1.7;">
-                        Rentabilidad via diferenciación. Target: <span style="color: var(--accent); font-weight: 700;">35%+ margen</span>
-                    </p>
+                    <div style="padding: 22px 18px; text-align: center;">
+                        <div style="position: relative; margin-bottom: 15px;">
+                            <div style="background: #FF0000; color: white; display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 1.2rem;">
+                                -8%
+                            </div>
+                        </div>
+                        <p style="margin: 0; color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">
+                            DISMINUIR<br>COSTOS FIJOS
+                        </p>
+                    </div>
+                </div>
+
+                <!-- VENTAS -->
+                <div style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease; cursor: pointer;">
+                    <div style="background: linear-gradient(135deg, #00695C 0%, #00251A 100%); padding: 18px; text-align: center; position: relative; color: white;">
+                        <div style="font-size: 3rem; margin-bottom: 8px;">📊</div>
+                        <h3 style="margin: 0; font-size: 1.1rem; font-weight: 700;">Ventas INTER EXPO</h3>
+                    </div>
+                    <div style="padding: 22px 18px; text-align: center;">
+                        <div style="position: relative; margin-bottom: 15px;">
+                            <div style="background: #00AA00; color: white; display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 1.2rem;">
+                                +28%
+                            </div>
+                        </div>
+                        <p style="margin: 0; color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">
+                            AUMENTO<br>Ventas
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="alert dark" style="margin-top: 40px; text-align: center;">
-                <strong style="font-size: 1.2rem;">Visión Corporativa:</strong><br>
-                "Más fortalecida en posicionamiento de mercado y estabilidad financiera"
+            <div style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, rgba(183, 28, 28, 0.08) 0%, rgba(21, 101, 192, 0.08) 100%); border-radius: 12px; border-left: 4px solid var(--primary);">
+                <p style="margin: 0; text-align: center; color: var(--text-dark); font-weight: 600;">
+                    <i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i>
+                    Estos ajustes son críticos para lograr los objetivos de rentabilidad y estabilidad financiera proyectados para 2026
+                </p>
             </div>
         </div>
-        <div class="slide-footer" style="color: #999;">
+        <div class="slide-footer">
             <span>Página 4</span>
             <div class="footer-sep"></div>
             <span>OPTIMIZACION PROYECTADA</span>
@@ -821,44 +890,114 @@
             </div>
             <span class="slide-number">5</span>
         </div>
-        <div class="slide-content">
-            <div class="grid-2">
-                <div class="chart-container">
-                    <h3 class="chart-title"><i class="fas fa-pie-chart"></i> Distribución Segmentación</h3>
-                    <canvas id="chartSegmentacion" style="max-height: 300px;"></canvas>
-                </div>
+        <div class="slide-content" style="overflow-y: auto; max-height: calc(100vh - 180px);">
+            <div style="padding: 0 20px;">
+                <p style="text-align: center; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+                    De acuerdo con un análisis en las ventas de los últimos 3 años, a continuación se presentan las cifras de las ventas que se proyectan de enero a diciembre de 2026.
+                </p>
 
-                <div>
-                    <div class="card">
-                        <h3 class="card-title">Ingresos Totales</h3>
-                        <div class="card-value">$9,324 MM</div>
-                        <div class="card-subtitle">Proyectado 2026 | Crecimiento 12%</div>
-
-                        <div style="margin-top: 30px; background: #F5F5F5; padding: 20px; border-radius: 8px;">
-                            <div style="display: flex; justify-content: space-between; margin: 12px 0;">
-                                <span><strong>Arq. Efímera</strong></span>
-                                <span style="color: var(--primary); font-weight: 700;">53%</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; margin: 12px 0;">
-                                <span><strong>Proy. Especiales</strong></span>
-                                <span style="color: var(--primary); font-weight: 700;">26%</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; margin: 12px 0;">
-                                <span><strong>Eventos Propios</strong></span>
-                                <span style="color: var(--primary); font-weight: 700;">11%</span>
-                            </div>
-                            <div style="display: flex; justify-content: space-between; margin: 12px 0; padding-top: 12px; border-top: 1px solid #DDD;">
-                                <span><strong>Internacionales</strong></span>
-                                <span style="color: var(--primary); font-weight: 700;">10%</span>
-                            </div>
-                        </div>
+                <!-- TABLA 1: ARQUITECTURA EFIMERA -->
+                <div style="margin-bottom: 25px;">
+                    <div style="background: linear-gradient(135deg, var(--secondary) 0%, #0D47A1 100%); color: white; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center;">
+                        VENTA DE ARQUITECTURA EFIMERA Y EVENTOS CORPORATIVOS
                     </div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 0 0 8px 8px; overflow: hidden;">
+                        <tr style="background: #F5F5F5;">
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; font-weight: 600;">COMERCIAL 1</td>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; text-align: right;">$</td>
+                            <td style="padding: 12px 15px; text-align: right; font-weight: 700; color: var(--primary);">1.000.000.000</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE;">COMERCIAL 2</td>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; text-align: right;">$</td>
+                            <td style="padding: 12px 15px; text-align: right; font-weight: 700; color: var(--primary);">1.000.000.000</td>
+                        </tr>
+                        <tr style="background: #F5F5F5;">
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE;">COMERCIAL 3</td>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; text-align: right;">$</td>
+                            <td style="padding: 12px 15px; text-align: right; font-weight: 700; color: var(--primary);">1.000.000.000</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE;">SERGIO RODRIGUEZ</td>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; text-align: right;">$</td>
+                            <td style="padding: 12px 15px; text-align: right; font-weight: 700; color: var(--primary);">2.000.000.000</td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, var(--secondary) 0%, #0D47A1 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px; border-right: 1px solid #1565C0;">TOTAL</td>
+                            <td style="padding: 15px; border-right: 1px solid #1565C0; text-align: right;">$</td>
+                            <td style="padding: 15px; text-align: right; font-size: 1.1rem;">5.000.000.000</td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
 
-            <div class="alert warning" style="margin-top: 30px;">
-                <strong><i class="fas fa-lightbulb"></i> Estrategia:</strong>
-                Enfoque Efímera + Especiales para mitigar riesgos y mantener márgenes competitivos
+                <!-- TABLA 2: PROYECTOS ESPECIALES -->
+                <div style="margin-bottom: 25px;">
+                    <div style="background: linear-gradient(135deg, #00695C 0%, #00251A 100%); color: white; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center;">
+                        VENTA DE PROYECTOS ESPECIALES E INTERNACIONALES DESDE COLOMBIA
+                    </div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 0 0 8px 8px; overflow: hidden;">
+                        <tr style="background: #F5F5F5;">
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; font-weight: 600;">DIANA SALDARRIAGA</td>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; text-align: right;">$</td>
+                            <td style="padding: 12px 15px; text-align: right; font-weight: 700; color: var(--success);">2.400.000.000</td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, #00695C 0%, #00251A 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px; border-right: 1px solid #004D40;">TOTAL</td>
+                            <td style="padding: 15px; border-right: 1px solid #004D40; text-align: right;">$</td>
+                            <td style="padding: 15px; text-align: right; font-size: 1.1rem;">2.400.000.000</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- TABLA 3: FERIAS Y EVENTOS PROPIOS -->
+                <div style="margin-bottom: 25px;">
+                    <div style="background: linear-gradient(135deg, #E65100 0%, #BF360C 100%); color: white; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center;">
+                        VENTA DE FERIAS Y EVENTOS PROPIOS
+                    </div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 0 0 8px 8px; overflow: hidden;">
+                        <tr style="background: #F5F5F5;">
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; font-weight: 600;">GERENCIA</td>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; text-align: right;">$</td>
+                            <td style="padding: 12px 15px; text-align: right; font-weight: 700; color: var(--warning);">1.000.000.000</td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, #E65100 0%, #BF360C 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px; border-right: 1px solid #D84315;">TOTAL</td>
+                            <td style="padding: 15px; border-right: 1px solid #D84315; text-align: right;">$</td>
+                            <td style="padding: 15px; text-align: right; font-size: 1.1rem;">1.000.000.000</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- TABLA 4: PROYECTOS INTERNACIONALES -->
+                <div style="margin-bottom: 25px;">
+                    <div style="background: linear-gradient(135deg, #7B1FA2 0%, #4A148C 100%); color: white; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center;">
+                        VENTA PROYECTOS INTERNACIONALES
+                    </div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 0 0 8px 8px; overflow: hidden;">
+                        <tr style="background: #F5F5F5;">
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; font-weight: 600;">GIUSEPPE JUNIOR</td>
+                            <td style="padding: 12px 15px; border-right: 1px solid #EEE; text-align: right;">$</td>
+                            <td style="padding: 12px 15px; text-align: right; font-weight: 700; color: var(--accent);">925.000.000</td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, #7B1FA2 0%, #4A148C 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px; border-right: 1px solid #6A1B9A;">TOTAL</td>
+                            <td style="padding: 15px; border-right: 1px solid #6A1B9A; text-align: right;">$</td>
+                            <td style="padding: 15px; text-align: right; font-size: 1.1rem;">925.000.000</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- RESUMEN TOTAL -->
+                <div style="background: linear-gradient(135deg, var(--primary) 0%, #8B0000 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px;">
+                    <div style="font-size: 0.95rem; margin-bottom: 8px;">TOTAL VENTAS GLOBALES CIA</div>
+                    <div style="font-size: 2rem; font-weight: 700;">$9.325.000.000</div>
+                </div>
+
+                <!-- GRÁFICA DE DISTRIBUCIÓN -->
+                <div style="margin-top: 30px; background: #F9F9F9; padding: 20px; border-radius: 8px; border-left: 4px solid var(--secondary);">
+                    <h4 style="margin: 0 0 20px 0; color: var(--text-dark); font-weight: 700;">Distribución de Ventas por Línea de Negocio</h4>
+                    <canvas id="chartVentasDistribucion" style="max-height: 250px;"></canvas>
+                </div>
             </div>
         </div>
         <div class="slide-footer">
@@ -877,36 +1016,72 @@
             </div>
             <span class="slide-number">6</span>
         </div>
-        <div class="slide-content">
-            <div class="grid-2" style="align-items: center; justify-content: center;">
-                <div class="chart-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <h3 class="chart-title"><i class="fas fa-exchange-alt"></i> Modalidades de Pago</h3>
-                    <canvas id="chartFinanciamiento" style="max-height: 280px; width: 100%; max-width: 280px;"></canvas>
+        <div class="slide-content" style="overflow-y: auto; max-height: calc(100vh - 180px);">
+            <div style="padding: 0 20px;">
+                <!-- TABLA RESUMEN -->
+                <div style="margin-bottom: 30px;">
+                    <div style="background: #F5F5F5; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center; border: 2px solid #333;">
+                        PROYECCIÓN VENTAS 2026 - TIPO DE EVENTO
+                    </div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; border: 2px solid #333; border-top: none;">
+                        <tr style="background: #F5F5F5; border-bottom: 2px solid #333;">
+                            <td style="padding: 15px 20px; font-weight: 700; border-right: 2px solid #333;">TIPO DE EVENTO</td>
+                            <td style="padding: 15px 20px; font-weight: 700; text-align: right;">VALOR VENTA</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">VENTA DE ARQUITECTURA EFÍMERA Y EVENTOS CORPORATIVOS</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">5.000.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">VENTA DE PROYECTOS ESPECIALES E INTERNACIONALES DESDE COLOMBIA</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">2.400.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">VENTA DE FERIAS Y EVENTOS PROPIOS</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">1.000.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 2px solid #333; background: #FAFAFA;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">VENTA PROYECTOS INTERNACIONALES</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">925.000.000</span></td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, var(--primary) 0%, #8B0000 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px 20px; border-right: 2px solid #8B0000;">TOTAL VENTAS GLOBALES CIA</td>
+                            <td style="padding: 15px 20px; text-align: right; font-size: 1.1rem;">$&nbsp;&nbsp;&nbsp;9.325.000.000</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div style="display: flex; align-items: center; justify-content: center;">
-                    <div class="card">
-                        <h3 class="card-title"><i class="fas fa-link"></i> Cadena de Valor Quebrada</h3>
-                        <p style="color: var(--text-muted); margin: 15px 0; line-height: 1.7;">
-                            Proveedores no financian pero INTER EXPO debe hacerlo con clientes
-                        </p>
-
-                        <div style="background: #E3F2FD; padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 3px solid var(--secondary);">
-                            <div style="font-weight: 700; color: var(--secondary);">40% Proyectos</div>
-                            <div style="color: var(--text-dark); margin-top: 5px;">Anticipo: <span class="highlight">60%</span></div>
+                <!-- GRÁFICA DONA -->
+                <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-top: 20px;">
+                    <h3 style="text-align: center; font-weight: 700; margin: 0 0 20px 0; font-size: 1.1rem;">PLAN ESTRATÉGICO DE VENTAS 2026</h3>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+                        <div style="width: 350px; height: 300px;">
+                            <canvas id="chartVentasTipo" style="max-height: 100%;"></canvas>
                         </div>
-
-                        <div style="background: #FFEBEE; padding: 15px; border-radius: 8px; border-left: 3px solid var(--primary);">
-                            <div style="font-weight: 700; color: var(--primary);">60% Ventas</div>
-                            <div style="color: var(--text-dark); margin-top: 5px;">Plazo: <span class="highlight">60 días</span></div>
+                        <div style="flex: 1;">
+                            <div style="margin-bottom: 16px; padding: 12px; background: #E3F2FD; border-radius: 6px; border-left: 4px solid #1565C0;">
+                                <span style="display: inline-block; width: 20px; height: 20px; background: #1565C0; border-radius: 3px; margin-right: 10px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">VENTA DE ARQUITECTURA EFÍMERA Y EVENTOS CORPORATIVOS</span><br>
+                                <span style="margin-left: 30px; color: var(--text-muted); font-size: 0.9rem;">53% - $5.000M</span>
+                            </div>
+                            <div style="margin-bottom: 16px; padding: 12px; background: #FCE4EC; border-radius: 6px; border-left: 4px solid #E91E63;">
+                                <span style="display: inline-block; width: 20px; height: 20px; background: #E91E63; border-radius: 3px; margin-right: 10px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">VENTA DE PROYECTOS ESPECIALES E INTERNACIONALES DESDE COLOMBIA</span><br>
+                                <span style="margin-left: 30px; color: var(--text-muted); font-size: 0.9rem;">26% - $2.400M</span>
+                            </div>
+                            <div style="margin-bottom: 16px; padding: 12px; background: #F3E5F5; border-radius: 6px; border-left: 4px solid #9C27B0;">
+                                <span style="display: inline-block; width: 20px; height: 20px; background: #9C27B0; border-radius: 3px; margin-right: 10px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">VENTA DE FERIAS Y EVENTOS PROPIOS</span><br>
+                                <span style="margin-left: 30px; color: var(--text-muted); font-size: 0.9rem;">11% - $1.000M</span>
+                            </div>
+                            <div style="padding: 12px; background: #FFF3E0; border-radius: 6px; border-left: 4px solid #FFA726;">
+                                <span style="display: inline-block; width: 20px; height: 20px; background: #FFA726; border-radius: 3px; margin-right: 10px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">VENTA PROYECTOS INTERNACIONALES</span><br>
+                                <span style="margin-left: 30px; color: var(--text-muted); font-size: 0.9rem;">10% - $925M</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="alert danger" style="margin-top: 30px;">
-                <strong><i class="fas fa-exclamation-triangle"></i> Crítico:</strong> 
-                Brecha requiere línea crédito contingente y renegociación agresiva con proveedores
             </div>
         </div>
         <div class="slide-footer">
@@ -925,54 +1100,92 @@
             </div>
             <span class="slide-number">7</span>
         </div>
-        <div class="slide-content">
-            <h3 class="section-title"><i class="fas fa-users-cog"></i> Volumen de Venta vs. Utilidad Generada</h3>
-            
-            <div class="chart-container">
-                <canvas id="chartComerciales" style="max-height: 320px;"></canvas>
-            </div>
-
-            <div class="grid-4" style="margin-top: 20px;">
-                <div class="card" style="text-align: center;">
-                    <div style="font-size: 1.8rem; color: var(--success); margin-bottom: 8px;">
-                        <i class="fas fa-star"></i>
+        <div class="slide-content" style="overflow-y: auto; max-height: calc(100vh - 180px);">
+            <div style="padding: 0 20px;">
+                <!-- TABLA RESUMEN POR COMERCIAL -->
+                <div style="margin-bottom: 25px;">
+                    <div style="background: #F5F5F5; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center; border: 2px solid #333;">
+                        PROYECCIÓN VENTAS 2026 - COMERCIAL
                     </div>
-                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Diana S.</h3>
-                    <div style="font-size: 2rem; font-weight: 900; color: var(--success); margin: 8px 0;">55%</div>
-                    <div class="stat-label" style="margin-bottom: 8px;">Margen Real</div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; border: 2px solid #333; border-top: none;">
+                        <tr style="background: #F5F5F5; border-bottom: 2px solid #333;">
+                            <td style="padding: 15px 20px; font-weight: 700; border-right: 2px solid #333;">COMERCIAL</td>
+                            <td style="padding: 15px 20px; font-weight: 700; text-align: right;">VALOR VENTA</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">COMERCIAL 1</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">1.000.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">COMERCIAL 2</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">1.000.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">COMERCIAL 3</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">1.000.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">SERGIO RODRIGUEZ</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">2.000.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">DIANA SALDARRIAGA</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">2.400.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">GERENCIA</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">1.000.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 2px solid #333;">
+                            <td style="padding: 12px 20px; border-right: 1px solid #DDD;">GIUSEPPE SALVATORE</td>
+                            <td style="padding: 12px 20px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--primary);">925.000.000</span></td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, var(--primary) 0%, #8B0000 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px 20px; border-right: 2px solid #8B0000;">TOTAL VENTAS GLOBALES CIA</td>
+                            <td style="padding: 15px 20px; text-align: right; font-size: 1.1rem;">$&nbsp;&nbsp;&nbsp;9.325.000.000</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div class="card" style="text-align: center;">
-                    <div style="font-size: 1.8rem; color: var(--secondary); margin-bottom: 8px;">
-                        <i class="fas fa-chart-bar"></i>
+                <!-- GRÁFICA DONA -->
+                <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-top: 20px;">
+                    <h3 style="text-align: center; font-weight: 700; margin: 0 0 20px 0; font-size: 1.1rem;">PLAN ESTRATÉGICO DE VENTAS 2026</h3>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+                        <div style="width: 350px; height: 300px;">
+                            <canvas id="chartVentasComercial" style="max-height: 100%;"></canvas>
+                        </div>
+                        <div style="flex: 1;">
+                            <div style="margin-bottom: 12px; padding: 10px; background: #E3F2FD; border-radius: 6px; border-left: 4px solid #1565C0; font-size: 0.9rem;">
+                                <span style="display: inline-block; width: 16px; height: 16px; background: #1565C0; border-radius: 2px; margin-right: 8px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">COMERCIAL 1</span><span style="float: right;">11%</span>
+                            </div>
+                            <div style="margin-bottom: 12px; padding: 10px; background: #FCE4EC; border-radius: 6px; border-left: 4px solid #E91E63; font-size: 0.9rem;">
+                                <span style="display: inline-block; width: 16px; height: 16px; background: #E91E63; border-radius: 2px; margin-right: 8px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">COMERCIAL 2</span><span style="float: right;">11%</span>
+                            </div>
+                            <div style="margin-bottom: 12px; padding: 10px; background: #FFF3E0; border-radius: 6px; border-left: 4px solid #FF9800; font-size: 0.9rem;">
+                                <span style="display: inline-block; width: 16px; height: 16px; background: #FF9800; border-radius: 2px; margin-right: 8px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">COMERCIAL 3</span><span style="float: right;">11%</span>
+                            </div>
+                            <div style="margin-bottom: 12px; padding: 10px; background: #F0F4C3; border-radius: 6px; border-left: 4px solid #CDDC39; font-size: 0.9rem;">
+                                <span style="display: inline-block; width: 16px; height: 16px; background: #CDDC39; border-radius: 2px; margin-right: 8px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">SERGIO RODRIGUEZ</span><span style="float: right;">21%</span>
+                            </div>
+                            <div style="margin-bottom: 12px; padding: 10px; background: #E0F2F1; border-radius: 6px; border-left: 4px solid #00BCD4; font-size: 0.9rem;">
+                                <span style="display: inline-block; width: 16px; height: 16px; background: #00BCD4; border-radius: 2px; margin-right: 8px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">DIANA SALDARRIAGA</span><span style="float: right;">26%</span>
+                            </div>
+                            <div style="margin-bottom: 12px; padding: 10px; background: #F3E5F5; border-radius: 6px; border-left: 4px solid #9C27B0; font-size: 0.9rem;">
+                                <span style="display: inline-block; width: 16px; height: 16px; background: #9C27B0; border-radius: 2px; margin-right: 8px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">GERENCIA</span><span style="float: right;">11%</span>
+                            </div>
+                            <div style="padding: 10px; background: #C8E6C9; border-radius: 6px; border-left: 4px solid #4CAF50; font-size: 0.9rem;">
+                                <span style="display: inline-block; width: 16px; height: 16px; background: #4CAF50; border-radius: 2px; margin-right: 8px; vertical-align: middle;"></span>
+                                <span style="font-weight: 600;">GIUSEPPE SALVATORE</span><span style="float: right;">10%</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Sergio R.</h3>
-                    <div style="font-size: 2rem; font-weight: 900; color: var(--secondary); margin: 8px 0;">40%</div>
-                    <div class="stat-label" style="margin-bottom: 8px;">Margen Real</div>
                 </div>
-
-                <div class="card" style="text-align: center;">
-                    <div style="font-size: 1.8rem; color: var(--warning); margin-bottom: 8px;">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Gerencia</h3>
-                    <div style="font-size: 2rem; font-weight: 900; color: var(--warning); margin: 8px 0;">45%</div>
-                    <div class="stat-label" style="margin-bottom: 8px;">Margen Real</div>
-                </div>
-
-                <div class="card" style="text-align: center;">
-                    <div style="font-size: 1.8rem; color: var(--primary); margin-bottom: 8px;">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3 style="font-size: 0.95rem; margin-bottom: 5px;">Giuseppe</h3>
-                    <div style="font-size: 2rem; font-weight: 900; color: var(--primary); margin: 8px 0;">25%</div>
-                    <div class="stat-label">Margen Real</div>
-                </div>
-            </div>
-
-            <div class="alert warning" style="margin-top: 30px;">
-                <strong><i class="fas fa-lightbulb"></i> Insight:</strong> 
-                30 puntos porcentuales entre mejor y peor. Oportunidad de estandarización
             </div>
         </div>
         <div class="slide-footer">
@@ -991,82 +1204,73 @@
             </div>
             <span class="slide-number">8</span>
         </div>
-        <div class="slide-content">
-            <h3 class="section-title"><i class="fas fa-calculator"></i> CON vs SIN INTER EXPO</h3>
-            
-            <div class="grid-2" style="margin-top: 30px;">
-                <div>
-                    <div class="card" style="margin-bottom: 20px;">
-                        <div>
-                            <span class="badge">Escenario 1</span>
-                            <h3 class="card-title">CON INTER EXPO</h3>
-                        </div>
-                        <div class="card-value" style="margin: 15px 0;">$2.9B</div>
-                        <div class="card-label">Gastos Operativos Anuales</div>
-                    </div>
+        <div class="slide-content" style="overflow-y: auto; max-height: calc(100vh - 180px);">
+            <div style="padding: 0 20px;">
+                <p style="text-align: justify; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+                    Teniendo en cuenta la proyección de ventas para el año 2026, a continuación se relacionan los costos proyectados con relación a las mismas:
+                </p>
 
-                    <div class="chart-container">
-                        <canvas id="chartGastosConIExpo" style="max-height: 240px;"></canvas>
+                <!-- TABLA COSTOS POR COMERCIAL -->
+                <div style="margin-bottom: 25px;">
+                    <div style="background: #F5F5F5; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center; border: 2px solid #333;">
+                        PROYECCIÓN COSTOS 2026
                     </div>
-
-                    <div style="background: #F5F5F5; padding: 15px; border-radius: 8px; margin-top: 15px;">
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Nómina</span>
-                            <span class="highlight">60%</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Fin. Gtos</span>
-                            <span class="highlight">8%</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Arriendo</span>
-                            <span>8%</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Vigilancia</span>
-                            <span>6%</span>
-                        </div>
-                    </div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; border: 2px solid #333; border-top: none;">
+                        <tr style="background: #F5F5F5; border-bottom: 2px solid #333;">
+                            <td style="padding: 12px 15px; font-weight: 700; border-right: 2px solid #333;">COMERCIAL</td>
+                            <td style="padding: 12px 15px; font-weight: 700; text-align: right; border-right: 2px solid #333;">VALOR VENTA</td>
+                            <td style="padding: 12px 15px; font-weight: 700; text-align: right;">VALOR COSTOS</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">COMERCIAL 1</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: #FF6B6B;">550.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">COMERCIAL 2</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: #FF6B6B;">550.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">COMERCIAL 3</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: #FF6B6B;">550.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">SERGIO RODRIGUEZ</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">2.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: #FF6B6B;">1.200.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">DIANA SALDARRIAGA</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">2.400.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: #FF6B6B;">1.080.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">GERENCIA</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: #FF6B6B;">550.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 2px solid #333;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">GIUSEPPE SALVATORE</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">925.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: #FF6B6B;">693.750.000</span></td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, var(--primary) 0%, #8B0000 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px; border-right: 2px solid #8B0000;">TOTAL COSTOS PRODUCCION</td>
+                            <td style="padding: 15px; border-right: 2px solid #8B0000; text-align: right;">$&nbsp;&nbsp;&nbsp;9.325.000.000</td>
+                            <td style="padding: 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;5.173.750.000</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div>
-                    <div class="card success" style="margin-bottom: 20px;">
-                        <div>
-                            <span class="badge success">Escenario 2</span>
-                            <h3 class="card-title" style="color: var(--success);">SIN INTER EXPO</h3>
-                        </div>
-                        <div class="card-value" style="margin: 15px 0; color: var(--success);">$2.3B</div>
-                        <div class="card-label">Gastos Operativos Anuales</div>
-                    </div>
-
-                    <div class="chart-container">
-                        <canvas id="chartGastosSinIExpo" style="max-height: 240px;"></canvas>
-                    </div>
-
-                    <div style="background: #E8F5E9; padding: 15px; border-radius: 8px; margin-top: 15px;">
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Nómina</span>
-                            <span class="highlight-success">73%</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Arriendo</span>
-                            <span>11%</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Honorarios</span>
-                            <span>6%</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; padding: 5px 0;">
-                            <span>Vigilancia</span>
-                            <span>4%</span>
-                        </div>
+                <!-- GRÁFICA DE COSTOS -->
+                <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-top: 20px;">
+                    <h3 style="text-align: center; font-weight: 700; margin: 0 0 20px 0; font-size: 1.1rem;">PROYECCIÓN COSTOS 2026</h3>
+                    <div style="width: 100%; height: 350px;">
+                        <canvas id="chartCostos" style="max-height: 100%;"></canvas>
                     </div>
                 </div>
-            </div>
-
-            <div class="alert success" style="margin-top: 30px;">
-                <strong><i class="fas fa-check-circle"></i> Ahorro Potencial:</strong>
-                <span class="highlight-success">$600 MM anuales</span> eliminando INTER EXPO | Impacto: +6.4% margen neto
             </div>
         </div>
         <div class="slide-footer">
@@ -1085,58 +1289,81 @@
             </div>
             <span class="slide-number">9</span>
         </div>
-        <div class="slide-content">
-            <h3 class="section-title"><i class="fas fa-chart-line"></i> Estado de Ganancias (Escenario Optimizado)</h3>
+        <div class="slide-content" style="overflow-y: auto; max-height: calc(100vh - 180px);">
+            <div style="padding: 0 20px;">
+                <p style="text-align: justify; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+                    De acuerdo con las ventas y costos presentados anteriormente, a continuación se presenta la utilidad proyectada por comercial:
+                </p>
 
-            <div class="chart-container">
-                <canvas id="chartPyL" style="max-height: 300px;"></canvas>
-            </div>
-
-            <div class="grid-4" style="margin-top: 30px;">
-                <div class="stat-box">
-                    <div class="stat-label">Ingresos Totales</div>
-                    <div class="stat-number">$9,324 MM</div>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">Ventas 2026</p>
+                <!-- TABLA UTILIDAD POR COMERCIAL -->
+                <div style="margin-bottom: 25px;">
+                    <div style="background: #F5F5F5; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center; border: 2px solid #333;">
+                        PROYECCIÓN UTILIDAD POR COMERCIAL 2026
+                    </div>
+                    <table style="width: 100%; border-collapse: collapse; background: white; border: 2px solid #333; border-top: none;">
+                        <tr style="background: #F5F5F5; border-bottom: 2px solid #333;">
+                            <td style="padding: 12px 15px; font-weight: 700; border-right: 1px solid #333;">COMERCIAL</td>
+                            <td style="padding: 12px 15px; font-weight: 700; text-align: right; border-right: 1px solid #333;">VALOR VENTA</td>
+                            <td style="padding: 12px 15px; font-weight: 700; text-align: right; border-right: 1px solid #333;">VALOR COSTOS</td>
+                            <td style="padding: 12px 15px; font-weight: 700; text-align: right;">UTILIDAD POR COMERCIAL</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">COMERCIAL 1</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">550.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--success);">450.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">COMERCIAL 2</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">550.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--success);">450.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">COMERCIAL 3</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">550.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--success);">450.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">SERGIO RODRIGUEZ</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">2.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.200.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--success);">800.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">DIANA SALDARRIAGA</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">2.400.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.080.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--success);">1.320.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">GERENCIA</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">1.000.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">550.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--success);">450.000.000</span></td>
+                        </tr>
+                        <tr style="border-bottom: 2px solid #333;">
+                            <td style="padding: 10px 15px; border-right: 1px solid #DDD;">GIUSEPPE SALVATORE</td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">925.000.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right; border-right: 1px solid #DDD;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700;">693.750.000</span></td>
+                            <td style="padding: 10px 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;<span style="font-weight: 700; color: var(--success);">231.250.000</span></td>
+                        </tr>
+                        <tr style="background: linear-gradient(135deg, var(--primary) 0%, #8B0000 100%); color: white; font-weight: 700;">
+                            <td style="padding: 15px; border-right: 2px solid #8B0000;">TOTALES</td>
+                            <td style="padding: 15px; border-right: 2px solid #8B0000; text-align: right;">$&nbsp;&nbsp;&nbsp;9.325.000.000</td>
+                            <td style="padding: 15px; border-right: 2px solid #8B0000; text-align: right;">$&nbsp;&nbsp;&nbsp;5.173.750.000</td>
+                            <td style="padding: 15px; text-align: right;">$&nbsp;&nbsp;&nbsp;4.151.250.000</td>
+                        </tr>
+                    </table>
                 </div>
 
-                <div class="stat-box warning">
-                    <div class="stat-label">Costo Producción</div>
-                    <div class="stat-number">$5,163 MM</div>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">MP + MO</p>
-                </div>
-
-                <div class="stat-box info">
-                    <div class="stat-label">Utilidad Bruta</div>
-                    <div class="stat-number">$4,161 MM</div>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">Después costos</p>
-                </div>
-
-                <div class="stat-box success">
-                    <div class="stat-label">Utilidad Neta</div>
-                    <div class="stat-number">$1,125 MM</div>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">Margen: 12.1%</p>
-                </div>
-            </div>
-
-            <div class="grid-2" style="margin-top: 30px;">
-                <div class="card">
-                    <h3 class="card-title">📊 Métricas Rentabilidad</h3>
-                    <ul class="content-list" style="margin-top: 15px;">
-                        <li>Margen Bruto: <span class="highlight">44.6%</span></li>
-                        <li>Margen Operacional: <span class="highlight">24.6%</span></li>
-                        <li>Margen Neto: <span class="highlight">12.1%</span></li>
-                        <li>Target 2026: <span class="highlight">15%+</span></li>
-                    </ul>
-                </div>
-
-                <div class="card accent">
-                    <h3 class="card-title" style="color: var(--accent);">🎯 Brecha Desempeño</h3>
-                    <ul class="content-list" style="margin-top: 15px;">
-                        <li>Margen Actual: 12.1%</li>
-                        <li>Margen Target: 15.0%</li>
-                        <li>Brecha: <span class="highlight-accent">-2.9%</span></li>
-                        <li>Impacto: <span class="highlight-accent">$270 MM</span></li>
-                    </ul>
+                <!-- GRÁFICA DE UTILIDAD -->
+                <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-top: 20px;">
+                    <h3 style="text-align: center; font-weight: 700; margin: 0 0 20px 0; font-size: 1.1rem;">PROYECCIÓN UTILIDAD POR COMERCIAL 2026</h3>
+                    <div style="width: 100%; height: 350px;">
+                        <canvas id="chartUtilidad" style="max-height: 100%;"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1147,54 +1374,268 @@
         </div>
     </div>
 
-    <!-- SLIDE 10: ALERTA -->
-    <div class="slide dark" style="background: linear-gradient(135deg, #5D2C2C 0%, var(--bg-dark) 100%);">
-        <div class="slide-header" style="border-bottom-color: rgba(255, 255, 255, 0.2);">
+    <!-- SLIDE 10: GASTOS FIJOS PROYECTADOS 2026 -->
+    <div class="slide light">
+        <div class="slide-header">
             <div>
-                <h2 style="color: #FF8A80;"><i class="fas fa-exclamation-triangle"></i> ALERTA CRÍTICA</h2>
-                <p style="font-size: 0.85rem; color: var(--accent); margin-top: 12px; font-weight: 600;">FLUJO DE CAJA</p>
+                <h2>Gastos Fijos Proyectados 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">GASTOS FIJOS CONSOLIDADOS</p>
             </div>
-            <span class="slide-number" style="color: #FF8A80;">10</span>
+            <span class="slide-number">10</span>
         </div>
-        <div class="slide-content" style="text-align: center;">
-            <p style="font-size: 1.5rem; color: #DDD; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 1px;">
-                Capital de Trabajo Disponible 2026
-            </p>
-
-            <div style="display: inline-block; margin: 30px 0;">
-                <div style="font-size: 5.5rem; font-weight: 900; color: #FF6B6B; margin: 20px 0; text-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);">
-                    $0
-                </div>
-                <p class="meta-info" style="font-size: 1.5rem; color: var(--accent);">MILLONES DE PESOS</p>
-            </div>
-
-            <div style="background: rgba(255, 107, 107, 0.12); border: 2px solid rgba(255, 107, 107, 0.3); border-radius: 12px; padding: 40px; margin-top: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
-                <h3 style="color: #FF8A80; font-size: 1.5rem; margin-bottom: 20px;">Implicaciones Operacionales</h3>
-                <p style="color: #DDD; font-size: 1.1rem; line-height: 1.8;">
-                    Incapacidad para financiar operaciones y ejecución de proyectos en 2026.
+        <div class="slide-content" style="overflow-y: auto; max-height: calc(100vh - 180px);">
+            <div style="padding: 0 20px;">
+                <p style="text-align: justify; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px;">
+                    A continuación se presenta la relación de los gastos fijos proyectados para el año 2026 de la compañía, teniendo en cuenta dos escenarios:
                 </p>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
-                    <div style="background: rgba(255, 107, 107, 0.1); padding: 15px; border-radius: 8px;">
-                        <p style="color: var(--accent); font-weight: 700;">⚠️ Riesgo Inmediato</p>
-                        <p style="color: #AAA; margin-top: 8px;">Imposibilidad financiar compras materia prima adelantadas</p>
+                <!-- DOS COLUMNAS PARA LAS TABLAS -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+                    <!-- TABLA 1: CONSOLIDADO CON IEXPO -->
+                    <div>
+                        <div style="background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%); color: white; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center;">
+                            CONSOLIDADO CON IEXPO
+                        </div>
+                        <table style="width: 100%; border-collapse: collapse; background: white; border: 1px solid #1565C0; border-top: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">CELULARES</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">6.120.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">TEL FIJOS - INTERNET</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">22.200.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">SERVICIOS PÚBLICOS</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">102.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">PREDIAL Y VEHÍCULOS</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">72.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">CÁMARA COMERCIO</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">10.200.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">PROSEGUR</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">7.200.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">ARRENDAMIENTO</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">240.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">ASEO</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">21.600.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">ARREGLOS LOCATIVOS</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">18.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">NÓMINA + PRESTACIONES + SOI</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">1.704.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">OSPI</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">9.408.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">POLIZA PYME</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">57.600.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">VIGILANCIA</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">180.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">HONORARIOS</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">186.000.000</td>
+                            </tr>
+                            <tr style="background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%); color: white; font-weight: 700;">
+                                <td style="padding: 12px; border-right: 1px solid #0D47A1;">GASTOS FINANCIEROS</td>
+                                <td style="padding: 12px; text-align: right;">216.000.000</td>
+                            </tr>
+                            <tr style="background: linear-gradient(135deg, #0D47A1 0%, #051251 100%); color: white; font-weight: 700;">
+                                <td style="padding: 15px 12px;">TOTAL GASTOS FIJOS</td>
+                                <td style="padding: 15px 12px; text-align: right; font-size: 1.05rem;">2.852.328.000</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div style="background: rgba(255, 107, 107, 0.1); padding: 15px; border-radius: 8px;">
-                        <p style="color: var(--accent); font-weight: 700;">💔 Oportunidad Perdida</p>
-                        <p style="color: #AAA; margin-top: 8px;">Proyectos rechazados por falta liquidez anticipos</p>
+
+                    <!-- TABLA 2: CONSOLIDADO GASTOS IEXPO -->
+                    <div>
+                        <div style="background: linear-gradient(135deg, #00695C 0%, #00251A 100%); color: white; padding: 15px; border-radius: 8px 8px 0 0; font-weight: 700; text-align: center;">
+                            CONSOLIDADO GASTOS IEXPO
+                        </div>
+                        <table style="width: 100%; border-collapse: collapse; background: white; border: 1px solid #00695C; border-top: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">TEL FIJOS - INTERNET</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">12.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">SERVICIOS PÚBLICOS</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">60.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">PREDIAL Y VEHÍCULOS</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">55.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">NÓMINA + PRESTACIONES + SOI</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">84.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">POLIZA PYME</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">40.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD; background: #FAFAFA;">
+                                <td style="padding: 10px 12px;">VIGILANCIA</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">96.000.000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #DDD;">
+                                <td style="padding: 10px 12px;">HONORARIOS</td>
+                                <td style="padding: 10px 12px; text-align: right; font-weight: 600;">60.000.000</td>
+                            </tr>
+                            <tr style="background: linear-gradient(135deg, #00695C 0%, #00251A 100%); color: white; font-weight: 700;">
+                                <td style="padding: 12px; border-right: 1px solid #00251A;">GASTOS FINANCIEROS</td>
+                                <td style="padding: 12px; text-align: right;">216.000.000</td>
+                            </tr>
+                            <tr style="background: linear-gradient(135deg, #00251A 0%, #001a12 100%); color: white; font-weight: 700;">
+                                <td style="padding: 15px 12px;">TOTAL GASTOS FIJOS</td>
+                                <td style="padding: 15px 12px; text-align: right; font-size: 1.05rem;">623.000.000</td>
+                            </tr>
+                            <tr style="background: #E8F5E9; font-weight: 700; color: var(--success);">
+                                <td style="padding: 12px;">AHORRO POTENCIAL</td>
+                                <td style="padding: 12px; text-align: right;">2.229.328.000</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- COMPARATIVA VISUAL -->
+                <div style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-top: 20px;">
+                    <h3 style="text-align: center; font-weight: 700; margin: 0 0 20px 0; font-size: 1.1rem;">COMPARATIVA GASTOS FIJOS 2026</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; text-align: center;">
+                        <div style="padding: 20px; background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); border-radius: 8px; border-left: 4px solid #1565C0;">
+                            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">CON IEXPO</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: #1565C0;">$2.852B</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">Gastos Totales</div>
+                        </div>
+                        <div style="padding: 20px; background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); border-radius: 8px; border-left: 4px solid #FF9800;">
+                            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">SIN IEXPO</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: #FF9800;">$623M</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">Gastos Esenciales</div>
+                        </div>
+                        <div style="padding: 20px; background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-radius: 8px; border-left: 4px solid #4CAF50;">
+                            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">AHORRO</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: #4CAF50;">$2.229B</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">Potencial Anual</div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 10</span>
+            <div class="footer-sep"></div>
+            <span>GASTOS FIJOS CONSOLIDADOS</span>
+        </div>
+    </div>
 
-            <div class="alert dark" style="margin-top: 40px; text-align: left; padding: 28px; border-radius: 12px;">
-                <strong style="font-size: 1.1rem; color: #FF8A80; display: block; margin-bottom: 18px;">⚡ ACCIONES INMEDIATAS:</strong>
-                <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 10px;">
-                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Aumentar anticipos a mínimo 70% (actual 60%)</li>
-                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Renegociar términos proveedores a 45+ días</li>
-                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Línea crédito contingente mínimo $500MM</li>
-                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Acelerar cobranza: 60 → 30 días</li>
-                    <li style="padding: 10px 0 10px 28px; position: relative; line-height: 1.4;"><span style="color: var(--accent); position: absolute; left: 0;">✓</span> Optimizar ciclo de capital trabajo</li>
-                </ul>
+    <!-- SLIDE 11: GASTOS FIJOS ACUMULADOS PROYECCIÓN 2026 -->
+    <div class="slide light">
+        <div class="slide-header">
+            <div>
+                <h2>Gastos Fijos Acumulados Proyección 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">CON IEXPO - DISTRIBUCIÓN PORCENTUAL</p>
+            </div>
+            <span class="slide-number">11</span>
+        </div>
+        <div class="slide-content" style="padding: 20px 40px;">
+            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center; height: calc(100vh - 220px);">
+                <!-- GRÁFICO -->
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <canvas id="chartGastosAcumulados" style="max-width: 520px; max-height: 520px;"></canvas>
+                </div>
+
+                <!-- LEYENDA Y DESCRIPCIÓN -->
+                <div style="padding-top: 0px;">
+                    <p style="text-align: justify; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.7;">
+                        La distribución de los gastos fijos consolidados con IEXPO muestra que la <strong>nómina más prestaciones y SOI es el rubro más significativo</strong> representando el <strong>60%</strong> del total de gastos fijos. 
+                    </p>
+                    <p style="text-align: justify; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.7;">
+                        Los gastos secundarios incluyen <strong>arrendamiento (8%)</strong>, <strong>gastos financieros (8%)</strong>, <strong>vigilancia (6%)</strong> y <strong>honorarios (6%)</strong>, que en conjunto representan el <strong>28%</strong> de los gastos operacionales.
+                    </p>
+                    <div style="background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); padding: 18px 16px; border-radius: 8px; border-left: 4px solid #FF9800; margin-top: 24px;">
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0; font-weight: 600; line-height: 1.5;">
+                            📌 El resto de gastos (servicios públicos, teléfono, predial, etc.) representan solo el <strong>12%</strong> del total de gastos fijos consolidados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 11</span>
+            <div class="footer-sep"></div>
+            <span>DISTRIBUCIÓN GASTOS FIJOS ACUMULADOS</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: ALERTA -->
+    <div class="slide light" style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);">
+        <div class="slide-header" style="border-bottom-color: rgba(0, 0, 0, 0.1);">
+            <div>
+                <h2 style="color: var(--primary);"><i class="fas fa-exclamation-triangle"></i> ALERTA CRÍTICA</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">FLUJO DE CAJA</p>
+            </div>
+            <span class="slide-number" style="color: var(--primary);">12</span>
+        </div>
+        <div class="slide-content" style="text-align: left; padding: 60px 40px;">
+            <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: center; height: calc(100vh - 220px);">
+                <!-- TABLA -->
+                <div>
+                    <div style="margin-bottom: 50px;">
+                        <table style="border-collapse: collapse; width: 100%; font-family: 'Inter', sans-serif;">
+                            <tr style="background: linear-gradient(90deg, var(--primary) 0%, #C41C1C 100%); color: white;">
+                                <td style="padding: 16px 20px; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px;">CONCEPTO</td>
+                                <td style="padding: 16px 20px; text-align: right; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px;">VALOR (COP)</td>
+                            </tr>
+                            <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
+                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">BANCOS</td>
+                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">576.121.961</td>
+                            </tr>
+                            <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
+                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">CARTERA</td>
+                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">1.269.216.138</td>
+                            </tr>
+                            <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
+                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">CTAS. X PAGAR</td>
+                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">1.850.125.322</td>
+                            </tr>
+                            <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
+                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">CRÉDITO BANCOLDEX</td>
+                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">1.200.000.000</td>
+                            </tr>
+                            <tr style="background: linear-gradient(90deg, #FFE8E8 0%, #FFF4E8 100%); border: 2px solid var(--primary);">
+                                <td style="padding: 18px 20px; font-weight: 800; color: var(--primary); font-size: 1.05rem;">DISPONIBLE</td>
+                                <td style="padding: 18px 20px; text-align: right; font-weight: 800; color: var(--primary); font-size: 1.05rem;">-1.204.787.223</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); padding: 24px 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
+                        <p style="font-size: 0.95rem; color: var(--primary); margin: 0; font-weight: 700; line-height: 1.6;">
+                            De acuerdo con esta información, para el año 2026 no se cuenta con capital de trabajo para la ejecución de proyectos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- GRÁFICA -->
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <canvas id="chartFlujoCaja" style="max-width: 100%; max-height: 400px;"></canvas>
+                </div>
             </div>
         </div>
         <div class="slide-footer" style="color: #999;">
@@ -1204,82 +1645,63 @@
         </div>
     </div>
 
-    <!-- SLIDE 11: ADDED VALUE -->
+    <!-- SLIDE 11: ESTADO DE GANANCIAS PROYECTADO 2026 -->
     <div class="slide light">
         <div class="slide-header">
             <div>
-                <h2>Estrategia Competitiva: ADDED VALUE</h2>
-                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">ESTADO DE GANANCIAS PROYECTADO 2026</p>
+                <h2>Estado de Ganancias Proyectado 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">ESCENARIOS CON IEXPO VS SIN IEXPO</p>
             </div>
             <span class="slide-number">11</span>
         </div>
-        <div class="slide-content">
-            <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px; text-align: center; font-weight: 600;">
-                Diferenciación de propuesta de valor para recuperar márgenes y posicionamiento
+        <div class="slide-content" style="text-align: center; padding: 120px 60px 40px 60px;">
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 30px; text-align: justify; line-height: 1.6;">
+                De acuerdo con la información presentada anteriormente respecto de las ventas, los costos y los gastos fijos, se muestran las siguientes cifras del estado de ganancias acumulado de la organización en dos escenarios:
             </p>
 
-            <div class="grid-3" style="margin-bottom: 30px;">
-                <div class="card">
-                    <div style="text-align: center; margin-bottom: 15px;">
-                        <i class="fas fa-pencil-ruler" style="font-size: 3rem; color: var(--primary);"></i>
-                    </div>
-                    <h3 class="card-title" style="text-align: center;">Diseño Disruptivo</h3>
-                    <p style="text-align: center; color: var(--text-muted); line-height: 1.6;">
-                        Modelos reutilizables en ferias, congresos y espacios corporativos. Reduce costos cliente 30-40%.
-                    </p>
-                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border);">
-                        <span class="badge" style="font-size: 0.75rem;">+15% Margen</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div style="text-align: center; margin-bottom: 15px;">
-                        <i class="fas fa-leaf" style="font-size: 3rem; color: var(--success);"></i>
-                    </div>
-                    <h3 class="card-title" style="text-align: center; color: var(--success);">Certificación Ambiental</h3>
-                    <p style="text-align: center; color: var(--text-muted); line-height: 1.6;">
-                        Huella de Carbono certificada. Acceso mercados premium con presupuestos ESG (25% mercado).
-                    </p>
-                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border);">
-                        <span class="badge success" style="font-size: 0.75rem;">+10% Ventas</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div style="text-align: center; margin-bottom: 15px;">
-                        <i class="fas fa-award" style="font-size: 3rem; color: var(--warning);"></i>
-                    </div>
-                    <h3 class="card-title" style="text-align: center; color: var(--warning);">Premio Lápiz Acero</h3>
-                    <p style="text-align: center; color: var(--text-muted); line-height: 1.6;">
-                        Proveedor oficial certificado. Reconocimiento en arquitectura efímera de excelencia.
-                    </p>
-                    <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border);">
-                        <span class="badge secondary" style="font-size: 0.75rem;">+12% Reputación</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid-2">
-                <div class="card accent">
-                    <h3 class="card-title" style="color: var(--accent);">CAPEX 2026</h3>
-                    <p style="color: var(--text-muted); margin: 15px 0; line-height: 1.7;">
-                        Renovación mobiliario corporativo seleccionado por Dirección General.
-                    </p>
-                    <div style="margin-top: 15px; padding: 15px; background: #FFFDE7; border-radius: 8px;">
-                        <strong style="color: #F57F17;">Presupuesto: $150-200MM</strong><br>
-                        <span style="color: var(--text-muted); font-size: 0.9rem;">ROI: 18 meses</span>
-                    </div>
-                </div>
-
-                <div class="card success">
-                    <h3 class="card-title" style="color: var(--success);">Resultados 2026</h3>
-                    <ul class="content-list" style="margin-top: 15px;">
-                        <li>Margen: <span class="highlight-success">+5-8%</span></li>
-                        <li>Ingresos: <span class="highlight-success">+15-20%</span></li>
-                        <li>Posicionamiento premium</li>
-                        <li>Diferenciación vs informal</li>
-                    </ul>
-                </div>
+            <div style="display: flex; justify-content: center; margin-top: 40px;">
+                <table style="border-collapse: collapse; font-family: 'Inter', sans-serif; max-width: 900px; width: 100%;">
+                    <tr style="background: linear-gradient(90deg, var(--primary) 0%, #C41C1C 100%); color: white;">
+                        <td style="padding: 16px 20px; font-weight: 700; font-size: 0.95rem; text-align: left; border-right: 2px solid white;">CONCEPTO</td>
+                        <td style="padding: 16px 20px; font-weight: 700; font-size: 0.95rem; text-align: center; border-right: 2px solid white;">CON IEXPO</td>
+                        <td style="padding: 16px 20px; font-weight: 700; font-size: 0.95rem; text-align: center;">SIN IEXPO</td>
+                    </tr>
+                    <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
+                        <td style="padding: 14px 20px; font-weight: 600; color: var(--text-dark); text-align: left; border-right: 1px solid #E8E8E8;">TOTAL VENTAS</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center; border-right: 1px solid #E8E8E8;">$ 9.325.000.000</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center;">$ 9.325.000.000</td>
+                    </tr>
+                    <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
+                        <td style="padding: 14px 20px; font-weight: 600; color: var(--text-dark); text-align: left; border-right: 1px solid #E8E8E8;">COSTO DE PRODUCCIÓN</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center; border-right: 1px solid #E8E8E8;">$ 5.173.750.000</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center;">$ 5.173.750.000</td>
+                    </tr>
+                    <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
+                        <td style="padding: 14px 20px; font-weight: 600; color: var(--text-dark); text-align: left; border-right: 1px solid #E8E8E8;">GASTOS FIJOS</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center; border-right: 1px solid #E8E8E8;">$ 2.852.328.000</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center;">$ 2.229.328.000</td>
+                    </tr>
+                    <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
+                        <td style="padding: 14px 20px; font-weight: 700; color: var(--primary); text-align: left; border-right: 1px solid #E8E8E8;">UTILIDAD BRUTA</td>
+                        <td style="padding: 14px 20px; font-weight: 700; color: var(--primary); text-align: center; border-right: 1px solid #E8E8E8;">$ 1.298.922.000</td>
+                        <td style="padding: 14px 20px; font-weight: 700; color: var(--primary); text-align: center;">$ 1.921.922.000</td>
+                    </tr>
+                    <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
+                        <td style="padding: 14px 20px; font-weight: 600; color: var(--text-dark); text-align: left; border-right: 1px solid #E8E8E8;">COMISIONES</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center; border-right: 1px solid #E8E8E8;">$ 190.000.000</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center;">$ 190.000.000</td>
+                    </tr>
+                    <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
+                        <td style="padding: 14px 20px; font-weight: 600; color: var(--text-dark); text-align: left; border-right: 1px solid #E8E8E8;">MENOS IMPUESTOS</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center; border-right: 1px solid #E8E8E8;">$ 388.122.700</td>
+                        <td style="padding: 14px 20px; color: var(--text-dark); text-align: center;">$ 606.172.700</td>
+                    </tr>
+                    <tr style="background: linear-gradient(90deg, #E8F5E9 0%, #F1F8E9 100%); border: 2px solid var(--success);">
+                        <td style="padding: 16px 20px; font-weight: 800; color: var(--success); text-align: left; border-right: 2px solid var(--success);">UTILIDAD NETA</td>
+                        <td style="padding: 16px 20px; font-weight: 800; color: var(--success); text-align: center; border-right: 2px solid var(--success);">$ 720.799.300</td>
+                        <td style="padding: 16px 20px; font-weight: 800; color: var(--success); text-align: center;">$ 1.125.749.300</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="slide-footer">
@@ -1289,45 +1711,121 @@
         </div>
     </div>
 
-    <!-- SLIDE 12: PLAN ACCIÓN -->
+    <!-- SLIDE 12: PROYECCIÓN UTILIDAD 2026 -->
+    <div class="slide light">
+        <div class="slide-header">
+            <div>
+                <h2>Proyección Utilidad 2026</h2>
+                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">ANÁLISIS COMPARATIVO: CON IEXPO VS SIN IEXPO</p>
+            </div>
+            <span class="slide-number">12</span>
+        </div>
+        <div class="slide-content" style="padding: 100px 40px 40px 40px; overflow-y: auto;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
+                <!-- GRÁFICO 1 -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 20px;">COMPARACION PROYECCION UTILIDAD 2026</h3>
+                    <canvas id="chartComparacion" style="max-width: 100%; max-height: 300px;"></canvas>
+                </div>
+
+                <!-- GRÁFICO 2 -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 20px;">COMPORTAMIENTO PROYECCION UTILIDAD 2026</h3>
+                    <canvas id="chartComportamiento" style="max-width: 100%; max-height: 300px;"></canvas>
+                </div>
+            </div>
+
+            <!-- TEXTO DESCRIPTIVO -->
+            <div style="background: linear-gradient(135deg, #FFE8E8 0%, #FFF5E8 100%); padding: 24px; border-radius: 8px; border-left: 5px solid var(--primary); margin-top: 30px;">
+                <p style="font-size: 0.95rem; color: var(--primary); margin: 0; font-weight: 700; line-height: 1.6;">
+                    De acuerdo con esta información, para el año 2026 se tendrá una utilidad neta acumulada por valor de <strong>$720.799.300</strong> en el escenario que incluye los gastos fijos de IExpo; y una utilidad neta acumulada de <strong>$1.125.749.300</strong> sin incluir los gastos de IExpo.
+                </p>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Página 11</span>
+            <div class="footer-sep"></div>
+            <span>ESTADO DE GANANCIAS PROYECTADO 2026</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 13: PLAN ACCIÓN -->
     <div class="slide light">
         <div class="slide-header">
             <div>
                 <h2>Plan de Acción 2026</h2>
                 <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">ESTADO DE GANANCIAS PROYECTADO 2026</p>
             </div>
-            <span class="slide-number">12</span>
+            <span class="slide-number">13</span>
         </div>
-        <div class="slide-content">
-            <div class="grid-2">
+        <div class="slide-content" style="padding: 40px; max-height: calc(100vh - 200px); overflow-y: auto;">
+            <div class="grid-2" style="gap: 20px;">
+                <!-- CORTO PLAZO -->
                 <div>
                     <h3 class="section-title"><i class="fas fa-lightning"></i> Corto Plazo (Q1-Q2)</h3>
-                    <ul class="content-list">
-                        <li>Política anticipos mínimo 70%</li>
-                        <li>Renegociar líneas crédito proveedores</li>
-                        <li>Auditoría gastos operativos fijos</li>
-                        <li>Plan cobranza acelerada 60→30 días</li>
-                        <li>Evaluar estructura INTER EXPO</li>
-                        <li>Iniciar certificación ambiental</li>
-                    </ul>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div style="background: #F0F7FF; padding: 12px; border-radius: 6px; border-left: 4px solid var(--secondary);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Política anticipos mínimo 70%</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Exigir mayor anticipo a clientes para mejorar flujo de caja</p>
+                        </div>
+                        <div style="background: #F0F7FF; padding: 12px; border-radius: 6px; border-left: 4px solid var(--secondary);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Renegociar líneas crédito proveedores</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Ampliar plazos de pago a 45+ días para mejorar capital de trabajo</p>
+                        </div>
+                        <div style="background: #F0F7FF; padding: 12px; border-radius: 6px; border-left: 4px solid var(--secondary);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Auditoría gastos operativos fijos</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Revisar y reducir gastos innecesarios para alcanzar -5% en costos</p>
+                        </div>
+                        <div style="background: #F0F7FF; padding: 12px; border-radius: 6px; border-left: 4px solid var(--secondary);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Plan cobranza acelerada 60→30 días</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Implementar sistema de cobranza más agresivo para recuperar efectivo</p>
+                        </div>
+                        <div style="background: #F0F7FF; padding: 12px; border-radius: 6px; border-left: 4px solid var(--secondary);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Evaluar estructura INTER EXPO</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Analizar impacto financiero de la alianza con IEXPO</p>
+                        </div>
+                        <div style="background: #F0F7FF; padding: 12px; border-radius: 6px; border-left: 4px solid var(--secondary);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Iniciar certificación ambiental</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Comenzar proceso de Huella de Carbono para acceder a mercados premium</p>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- MEDIANO PLAZO -->
                 <div>
                     <h3 class="section-title"><i class="fas fa-chart-pie"></i> Mediano Plazo (Q3-Q4)</h3>
-                    <ul class="content-list">
-                        <li>Lanzar línea productos Added Value</li>
-                        <li>Obtener certificación Huella Carbono</li>
-                        <li>Formalizar integración Lápiz Acero</li>
-                        <li>Optimizar mix portafolio</li>
-                        <li>Evaluación rentabilidad comercial</li>
-                        <li>Renovación CAPEX mobiliario</li>
-                    </ul>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div style="background: #F0FFF4; padding: 12px; border-radius: 6px; border-left: 4px solid var(--success);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Lanzar línea productos Added Value</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Productos reutilizables para reducir costos cliente 30-40% (+15% margen)</p>
+                        </div>
+                        <div style="background: #F0FFF4; padding: 12px; border-radius: 6px; border-left: 4px solid var(--success);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Obtener certificación Huella Carbono</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Certificado oficial para acceder a presupuestos ESG (25% del mercado)</p>
+                        </div>
+                        <div style="background: #F0FFF4; padding: 12px; border-radius: 6px; border-left: 4px solid var(--success);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Formalizar integración Lápiz Acero</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Consolidar alianza estratégica para arquitectura efímera de excelencia</p>
+                        </div>
+                        <div style="background: #F0FFF4; padding: 12px; border-radius: 6px; border-left: 4px solid var(--success);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Optimizar mix portafolio</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Ajustar producto/servicio mix para maximizar márgenes</p>
+                        </div>
+                        <div style="background: #F0FFF4; padding: 12px; border-radius: 6px; border-left: 4px solid var(--success);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Evaluación rentabilidad comercial</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Análisis de clientes y proyectos para identificar rentabilidad</p>
+                        </div>
+                        <div style="background: #F0FFF4; padding: 12px; border-radius: 6px; border-left: 4px solid var(--success);">
+                            <p style="font-weight: 600; color: var(--text-dark); margin: 0 0 4px 0;">Renovación CAPEX mobiliario</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Inversión $150-200MM en equipamiento corporativo (ROI 18 meses)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="grid-2" style="margin-top: 30px;">
+            <div class="grid-2" style="margin-top: 20px; gap: 20px;">
                 <div class="card success">
-                    <h3 class="card-title" style="color: var(--success);">KPIs Éxito Q1</h3>
+                    <h3 class="card-title" style="color: var(--success);">📊 KPIs Éxito Q1</h3>
                     <ul class="content-list">
                         <li>Anticipos: <span class="highlight-success">70%+</span></li>
                         <li>Reducción gastos: <span class="highlight-success">-5%</span></li>
@@ -1337,7 +1835,7 @@
                 </div>
 
                 <div class="card info">
-                    <h3 class="card-title" style="color: var(--secondary);">Hitos Finales</h3>
+                    <h3 class="card-title" style="color: var(--secondary);">🎯 Hitos Finales 2026</h3>
                     <ul class="content-list">
                         <li>Ingresos: <span class="highlight-secondary">$9.3B</span></li>
                         <li>Utilidad Neta: <span class="highlight-secondary">$1.1B</span></li>
@@ -1350,47 +1848,23 @@
         <div class="slide-footer">
             <span>Página 12</span>
             <div class="footer-sep"></div>
-            <span>ESTADO DE GANANCIAS PROYECTADO 2026</span>
+            <span>PROYECCIÓN UTILIDAD 2026</span>
         </div>
     </div>
 
     <!-- SLIDE 13: CONCLUSIONES -->
     <div class="slide light">
         <div class="slide-content" style="text-align: center;">
-            <h2 style="font-size: 3.5rem; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; color: #1a1a1a;">2026: Transformación y Rentabilidad</h2>
-
-            <div class="grid-3" style="margin: 60px 0;">
-                <div style="text-align: center;">
-                    <p style="color: var(--accent); font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                        <i class="fas fa-arrow-up"></i> $9.3B
-                    </p>
-                    <p style="color: #666; font-size: 1.1rem;">Ingresos Proyectados</p>
-                </div>
-                <div style="text-align: center;">
-                    <p style="color: var(--accent); font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                        <i class="fas fa-dollar-sign"></i> $1.1B
-                    </p>
-                    <p style="color: #666; font-size: 1.1rem;">Utilidad Neta</p>
-                </div>
-                <div style="text-align: center;">
-                    <p style="color: var(--accent); font-size: 2rem; font-weight: 700; margin-bottom: 10px;">
-                        <i class="fas fa-percent"></i> 18.5%
-                    </p>
-                    <p style="color: #666; font-size: 1.1rem;">ROI Esperado</p>
-                </div>
-            </div>
+            <h2 style="font-size: 3.5rem; margin-bottom: 60px; text-transform: uppercase; letter-spacing: 2px; color: #1a1a1a;">2026: Transformación y Rentabilidad</h2>
 
             <div class="divider"></div>
 
-            <div style="background: rgba(255, 255, 255, 0.5); border: 2px solid rgba(212, 175, 55, 0.4); border-radius: 12px; padding: 40px; max-width: 700px; margin: 50px auto 0;">
-                <p style="font-size: 1.4rem; color: #1a1a1a; line-height: 1.9; margin-bottom: 25px;">
-                    <strong>El éxito depende del compromiso total de todos los equipos.</strong>
+            <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(183, 28, 28, 0.08) 100%); border: 2px solid var(--accent); border-radius: 12px; padding: 50px 40px; max-width: 800px; margin: 50px auto 0;">
+                <p style="font-size: 1.6rem; color: var(--primary); line-height: 2; margin: 0; font-weight: 700; text-align: center;">
+                    "En cada exposición se construye una oportunidad,<br>en cada proyecto se forja el futuro."
                 </p>
-                <p style="font-size: 1.1rem; color: #333; line-height: 1.8;">
-                    <span style="color: var(--accent); font-weight: 700;">Optimización</span> + 
-                    <span style="color: var(--accent); font-weight: 700;">Innovación</span> + 
-                    <span style="color: var(--accent); font-weight: 700;">Comercial</span> = 
-                    <span style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">Rentabilidad Sostenible</span>
+                <p style="font-size: 1.1rem; color: var(--accent); line-height: 1.8; margin-top: 20px; text-align: center; font-weight: 700;">
+                    INTER EXPO 2026: Donde la innovación encuentra la rentabilidad
                 </p>
             </div>
 
@@ -1399,9 +1873,9 @@
             </p>
         </div>
         <div class="slide-footer" style="color: #666;">
-            <span>Página 13</span>
+            <span>Página 14</span>
             <div class="footer-sep" style="background: rgba(0,0,0,0.1);"></div>
-            <span style="color: var(--accent);">ESTADO DE GANANCIAS PROYECTADO 2026</span>
+            <span style="color: var(--accent);">PLAN DE ACCIÓN 2026</span>
         </div>
     </div>
 
@@ -1600,14 +2074,67 @@
         const chartInstances = {};
 
         function initCharts() {
+            if (!chartInstances['chartVentasDistribucion'] && document.getElementById('chartVentasDistribucion')?.getContext('2d')) {
+                chartInstances['chartVentasDistribucion'] = new Chart(document.getElementById('chartVentasDistribucion'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Arq. Efímera', 'Proy. Especiales', 'Eventos Propios', 'Internacionales'],
+                        datasets: [{
+                            label: 'Ventas 2026 (Millones)',
+                            data: [5000, 2400, 1000, 925],
+                            backgroundColor: ['#1565C0', '#00695C', '#E65100', '#7B1FA2'],
+                            borderRadius: 8,
+                            borderSkipped: false
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        indexAxis: 'y',
+                        scales: {
+                            x: { 
+                                beginAtZero: true, 
+                                ticks: { callback: (v) => '$' + v.toLocaleString() + 'M', font: { weight: '600' } }
+                            },
+                            y: { ticks: { font: { weight: '600' } } }
+                        },
+                        plugins: {
+                            legend: { position: 'top', labels: { font: { size: 12, weight: '600' }, padding: 15 } }
+                        }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartVentasTipo'] && document.getElementById('chartVentasTipo')?.getContext('2d')) {
+                chartInstances['chartVentasTipo'] = new Chart(document.getElementById('chartVentasTipo'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Arquitectura Efímera (53%)', 'Proyectos Especiales (26%)', 'Ferias y Eventos Propios (11%)', 'Proyectos Internacionales (10%)'],
+                        datasets: [{
+                            data: [53, 26, 11, 10],
+                            backgroundColor: ['#1565C0', '#E91E63', '#9C27B0', '#FFA726'],
+                            borderWidth: 3,
+                            borderColor: '#FFFFFF'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { font: { size: 11, weight: '600' }, padding: 15 } }
+                        }
+                    }
+                });
+            }
+
             if (!chartInstances['chartSegmentacion'] && document.getElementById('chartSegmentacion')?.getContext('2d')) {
                 chartInstances['chartSegmentacion'] = new Chart(document.getElementById('chartSegmentacion'), {
                     type: 'doughnut',
                     data: {
-                        labels: ['Arq. Efímera', 'Proy. Especiales', 'Eventos Propios', 'Internacionales'],
+                        labels: ['Arq. Efímera (53.6%)', 'Proy. Especiales (25.7%)', 'Eventos Propios (10.7%)', 'Internacionales (9.9%)'],
                         datasets: [{
-                            data: [53, 26, 11, 10],
-                            backgroundColor: ['#B71C1C', '#1565C0', '#D4AF37', '#00695C'],
+                            data: [5000, 2400, 1000, 925],
+                            backgroundColor: ['#1565C0', '#00695C', '#E65100', '#7B1FA2'],
                             borderWidth: 3,
                             borderColor: '#FFFFFF'
                         }]
@@ -1642,6 +2169,28 @@
                 });
             }
 
+            if (!chartInstances['chartVentasComercial'] && document.getElementById('chartVentasComercial')?.getContext('2d')) {
+                chartInstances['chartVentasComercial'] = new Chart(document.getElementById('chartVentasComercial'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Comercial 1 (11%)', 'Comercial 2 (11%)', 'Comercial 3 (11%)', 'Sergio Rodriguez (21%)', 'Diana Saldarriaga (26%)', 'Gerencia (11%)', 'Giuseppe Salvatore (10%)'],
+                        datasets: [{
+                            data: [11, 11, 11, 21, 26, 11, 10],
+                            backgroundColor: ['#1565C0', '#E91E63', '#FF9800', '#CDDC39', '#00BCD4', '#9C27B0', '#4CAF50'],
+                            borderWidth: 3,
+                            borderColor: '#FFFFFF'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { font: { size: 10, weight: '600' }, padding: 12 } }
+                        }
+                    }
+                });
+            }
+
             if (!chartInstances['chartComerciales'] && document.getElementById('chartComerciales')?.getContext('2d')) {
                 chartInstances['chartComerciales'] = new Chart(document.getElementById('chartComerciales'), {
                     type: 'bar',
@@ -1660,6 +2209,113 @@
                             x: { ticks: { font: { weight: '600' } } }
                         },
                         plugins: { legend: { position: 'bottom', labels: { font: { size: 11, weight: '600' }, padding: 15 } } }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartCostos'] && document.getElementById('chartCostos')?.getContext('2d')) {
+                chartInstances['chartCostos'] = new Chart(document.getElementById('chartCostos'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Comercial 1', 'Comercial 2', 'Comercial 3', 'Sergio Rodríguez', 'Diana Saldarriaga', 'Gerencia', 'Giuseppe Salvatore'],
+                        datasets: [
+                            { 
+                                label: 'Valor Venta', 
+                                data: [1000, 1000, 1000, 2000, 2400, 1000, 925], 
+                                backgroundColor: '#1565C0',
+                                borderRadius: 6,
+                                yAxisID: 'y'
+                            },
+                            { 
+                                label: 'Valor Costos', 
+                                data: [550, 550, 550, 1200, 1080, 550, 693.75], 
+                                backgroundColor: '#FF6B6B',
+                                borderRadius: 6,
+                                yAxisID: 'y'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { 
+                                beginAtZero: true, 
+                                ticks: { callback: (v) => '$' + v.toLocaleString() + 'M', font: { weight: '600' } }
+                            },
+                            x: { ticks: { font: { weight: '600' } } }
+                        },
+                        plugins: { 
+                            legend: { position: 'top', labels: { font: { size: 12, weight: '600' }, padding: 20 } }
+                        }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartUtilidad'] && document.getElementById('chartUtilidad')?.getContext('2d')) {
+                chartInstances['chartUtilidad'] = new Chart(document.getElementById('chartUtilidad'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['Comercial 1', 'Comercial 2', 'Comercial 3', 'Sergio Rodríguez', 'Diana Saldarriaga', 'Gerencia', 'Giuseppe Salvatore'],
+                        datasets: [
+                            { 
+                                label: 'Valor Venta', 
+                                data: [1000, 1000, 1000, 2000, 2400, 1000, 925], 
+                                backgroundColor: '#1565C0',
+                                borderRadius: 6,
+                                yAxisID: 'y'
+                            },
+                            { 
+                                label: 'Valor Costos', 
+                                data: [550, 550, 550, 1200, 1080, 550, 693.75], 
+                                backgroundColor: '#FF9800',
+                                borderRadius: 6,
+                                yAxisID: 'y'
+                            },
+                            { 
+                                label: 'Utilidad por Comercial', 
+                                data: [450, 450, 450, 800, 1320, 450, 231.25], 
+                                backgroundColor: '#FFD700',
+                                borderRadius: 6,
+                                yAxisID: 'y'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { 
+                                beginAtZero: true, 
+                                ticks: { callback: (v) => '$' + v.toLocaleString() + 'M', font: { weight: '600' } }
+                            },
+                            x: { ticks: { font: { weight: '600' } } }
+                        },
+                        plugins: { 
+                            legend: { position: 'top', labels: { font: { size: 12, weight: '600' }, padding: 20 } },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        let percentage = 0;
+                                        const venta = [1000, 1000, 1000, 2000, 2400, 1000, 925][context.dataIndex];
+                                        const costo = [550, 550, 550, 1200, 1080, 550, 693.75][context.dataIndex];
+                                        const utilidad = venta - costo;
+                                        
+                                        if (context.dataset.label === 'Utilidad por Comercial') {
+                                            percentage = Math.round((utilidad / venta) * 100);
+                                            label += '$' + context.parsed.y.toLocaleString() + 'M (' + percentage + '%)';
+                                        } else {
+                                            label += '$' + context.parsed.y.toLocaleString() + 'M';
+                                        }
+                                        return label;
+                                    }
+                                }
+                            }
+                        }
                     }
                 });
             }
@@ -1725,6 +2381,251 @@
                             x: { ticks: { font: { weight: '600' } } }
                         },
                         plugins: { legend: { display: true, labels: { font: { size: 12, weight: '600' }, padding: 15 } } }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartGastosAcumulados'] && document.getElementById('chartGastosAcumulados')?.getContext('2d')) {
+                chartInstances['chartGastosAcumulados'] = new Chart(document.getElementById('chartGastosAcumulados'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Nómina + Prestaciones', 'Arrendamiento', 'Gastos Financieros', 'Vigilancia', 'Honorarios', 'Servicios Públicos', 'Predial y Vehículos', 'Teléfono - Internet', 'Póliza PYME', 'Otros'],
+                        datasets: [{
+                            data: [60, 8, 8, 6, 6.5, 3.5, 2.5, 0.8, 2, 2.7],
+                            backgroundColor: ['#FFD700', '#B71C1C', '#FF6B6B', '#1565C0', '#D1B3D4', '#4CAF50', '#FF9800', '#FFA726', '#90CAF9', '#CE93D8'],
+                            borderColor: '#fff',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                position: 'right',
+                                labels: {
+                                    font: { size: 11, weight: '600' },
+                                    padding: 15,
+                                    generateLabels: function(chart) {
+                                        const data = chart.data;
+                                        return data.labels.map((label, i) => ({
+                                            text: label + ' (' + data.datasets[0].data[i] + '%)',
+                                            fillStyle: data.datasets[0].backgroundColor[i],
+                                            hidden: false,
+                                            index: i
+                                        }));
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.label + ': ' + context.parsed + '%';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartFlujoCaja'] && document.getElementById('chartFlujoCaja')?.getContext('2d')) {
+                chartInstances['chartFlujoCaja'] = new Chart(document.getElementById('chartFlujoCaja'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['BANCOS', 'CARTERA', 'CTAS. X PAGAR', 'CRÉDITO', 'DISPONIBLE'],
+                        datasets: [{
+                            label: 'Valor (Millones COP)',
+                            data: [576.121961, 1269.216138, -1850.125322, 1200, -1204.787223],
+                            backgroundColor: [
+                                '#4CAF50',
+                                '#42A5F5',
+                                '#EF5350',
+                                '#1565C0',
+                                '#B71C1C'
+                            ],
+                            borderColor: [
+                                '#2E7D32',
+                                '#1565C0',
+                                '#C62828',
+                                '#0D47A1',
+                                '#7B0000'
+                            ],
+                            borderWidth: 2,
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                labels: {
+                                    font: { size: 12, weight: '600' },
+                                    padding: 15,
+                                    color: '#0D1B2A'
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const value = context.parsed.x;
+                                        return (value >= 0 ? '+' : '') + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    callback: function(value) {
+                                        return (value >= 0 ? '+' : '') + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    },
+                                    font: { size: 10, weight: '600' },
+                                    color: '#757575'
+                                },
+                                grid: { color: 'rgba(0,0,0,0.05)' }
+                            },
+                            y: {
+                                ticks: {
+                                    font: { size: 11, weight: '700' },
+                                    color: '#0D1B2A'
+                                },
+                                grid: { display: false }
+                            }
+                        }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartComparacion'] && document.getElementById('chartComparacion')?.getContext('2d')) {
+                chartInstances['chartComparacion'] = new Chart(document.getElementById('chartComparacion'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['TOTAL VENTAS', 'COSTO DE PRODUCCIÓN', 'GASTOS FIJOS', 'UTILIDAD BRUTA', 'COMISIONES', 'MENOS IMPUESTOS', 'UTILIDAD NETA'],
+                        datasets: [
+                            {
+                                label: 'CON IEXPO',
+                                data: [9325, 5173.75, 2852.328, 1298.922, 190, 388.123, 720.799],
+                                backgroundColor: '#1565C0',
+                                borderColor: '#0D47A1',
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'SIN IEXPO',
+                                data: [9325, 5173.75, 2229.328, 1921.922, 190, 606.173, 1125.749],
+                                backgroundColor: '#FF9800',
+                                borderColor: '#F57C00',
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        indexAxis: 'y',
+                        plugins: {
+                            legend: {
+                                display: true,
+                                labels: { font: { size: 10, weight: '600' }, padding: 10 }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.dataset.label + ': $' + context.parsed.x.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    callback: function(value) {
+                                        return '$' + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    },
+                                    font: { size: 9 }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            if (!chartInstances['chartComportamiento'] && document.getElementById('chartComportamiento')?.getContext('2d')) {
+                chartInstances['chartComportamiento'] = new Chart(document.getElementById('chartComportamiento'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['CON IEXPO', 'SIN IEXPO'],
+                        datasets: [
+                            {
+                                label: 'TOTAL VENTAS',
+                                data: [9325, 9325],
+                                backgroundColor: '#1565C0'
+                            },
+                            {
+                                label: 'COSTO DE PRODUCCIÓN',
+                                data: [5173.75, 5173.75],
+                                backgroundColor: '#FF9800'
+                            },
+                            {
+                                label: 'GASTOS FIJOS',
+                                data: [2852.328, 2229.328],
+                                backgroundColor: '#F57F17'
+                            },
+                            {
+                                label: 'UTILIDAD BRUTA',
+                                data: [1298.922, 1921.922],
+                                backgroundColor: '#B71C1C'
+                            },
+                            {
+                                label: 'COMISIONES',
+                                data: [190, 190],
+                                backgroundColor: '#4CAF50'
+                            },
+                            {
+                                label: 'MENOS IMPUESTOS',
+                                data: [388.123, 606.173],
+                                backgroundColor: '#9C27B0'
+                            },
+                            {
+                                label: 'UTILIDAD NETA',
+                                data: [720.799, 1125.749],
+                                backgroundColor: '#00695C'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                labels: { font: { size: 9, weight: '600' }, padding: 8 }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return context.dataset.label + ': $' + context.parsed.y.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                stacked: false,
+                                ticks: {
+                                    callback: function(value) {
+                                        return '$' + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                    },
+                                    font: { size: 8 }
+                                }
+                            },
+                            x: {
+                                stacked: false
+                            }
+                        }
                     }
                 });
             }
