@@ -178,7 +178,7 @@
         }
         .grid-4 { 
             display: grid; 
-            grid-template-columns: repeat(4, 1fr); 
+            grid-template-columns: repeat(2, 1fr); 
             gap: 8px; 
             margin: 8px 0;
             min-width: 0;
@@ -814,62 +814,23 @@
 
             <div class="grid-4" style="gap: 18px;">
                 <!-- NÓMINA -->
-                <div style="border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);">
-                    <img src="https://i.postimg.cc/gxYgPqzX/nomina.png" style="width: 100%; height: auto; display: block;" alt="Nómina">
+                <div style="border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: center;">
+                    <img src="nomina.png" style="width: 70%; height: auto; display: block; object-fit: cover;" alt="Nómina">
                 </div>
 
                 <!-- VIGILANCIA -->
-                <div style="background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease; cursor: pointer;">
-                    <div style="background: linear-gradient(135deg, #7B1FA2 0%, #4A148C 100%); padding: 18px; text-align: center; position: relative; color: white;">
-                        <div style="font-size: 3rem; margin-bottom: 8px;">👮</div>
-                        <h3 style="margin: 0; font-size: 1.1rem; font-weight: 700;">Vigilancia INTER EXPO</h3>
-                    </div>
-                    <div style="padding: 22px 18px; text-align: center;">
-                        <div style="position: relative; margin-bottom: 15px;">
-                            <div style="background: #FF0000; color: white; display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 1.2rem;">
-                                -40%
-                            </div>
-                        </div>
-                        <p style="margin: 0; color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">
-                            DISMINUIR<br>VIGILANCIA
-                        </p>
-                    </div>
+                <div style="border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: center;">
+                    <img src="vigilancia.png" style="width: 70%; height: auto; display: block; object-fit: cover;" alt="Vigilancia">
                 </div>
 
                 <!-- GASTOS FIJOS -->
-                <div style="background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease; cursor: pointer;">
-                    <div style="background: linear-gradient(135deg, #E65100 0%, #BF360C 100%); padding: 18px; text-align: center; position: relative; color: white;">
-                        <div style="font-size: 3rem; margin-bottom: 8px;">🔒</div>
-                        <h3 style="margin: 0; font-size: 1.1rem; font-weight: 700;">Costos Fijos INTER EXPO</h3>
-                    </div>
-                    <div style="padding: 22px 18px; text-align: center;">
-                        <div style="position: relative; margin-bottom: 15px;">
-                            <div style="background: #FF0000; color: white; display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 1.2rem;">
-                                -8%
-                            </div>
-                        </div>
-                        <p style="margin: 0; color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">
-                            DISMINUIR<br>COSTOS FIJOS
-                        </p>
-                    </div>
+                <div style="border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: center;">
+                    <img src="gastosfijos.png" style="width: 70%; height: auto; display: block; object-fit: cover;" alt="Gastos Fijos">
                 </div>
 
                 <!-- VENTAS -->
-                <div style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease; cursor: pointer;">
-                    <div style="background: linear-gradient(135deg, #00695C 0%, #00251A 100%); padding: 18px; text-align: center; position: relative; color: white;">
-                        <div style="font-size: 3rem; margin-bottom: 8px;">📊</div>
-                        <h3 style="margin: 0; font-size: 1.1rem; font-weight: 700;">Ventas INTER EXPO</h3>
-                    </div>
-                    <div style="padding: 22px 18px; text-align: center;">
-                        <div style="position: relative; margin-bottom: 15px;">
-                            <div style="background: #00AA00; color: white; display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 1.2rem;">
-                                +28%
-                            </div>
-                        </div>
-                        <p style="margin: 0; color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">
-                            AUMENTO<br>Ventas
-                        </p>
-                    </div>
+                <div style="border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: center;">
+                    <img src="ventas.png" style="width: 70%; height: auto; display: block; object-fit: cover;" alt="Ventas">
                 </div>
             </div>
 
@@ -1609,47 +1570,6 @@
         </div>
     </div>
 
-    <!-- SLIDE 10B: COMPARATIVA GASTOS FIJOS -->
-    <div class="slide light">
-        <div class="slide-header">
-            <div>
-                <h2>Comparativa Gastos Fijos 2026</h2>
-                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">ANÁLISIS CON IEXPO VS SIN IEXPO</p>
-            </div>
-            <span class="slide-number">10B</span>
-        </div>
-        <div class="slide-content" style="padding: 40px;">
-            <div style="padding: 0 20px;">
-                <!-- COMPARATIVA VISUAL -->
-                <div style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-                    <h3 style="text-align: center; font-weight: 700; margin: 0 0 30px 0; font-size: 1.2rem;">COMPARATIVA GASTOS FIJOS 2026</h3>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; text-align: center;">
-                        <div style="padding: 20px; background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); border-radius: 8px; border-left: 4px solid #1565C0;">
-                            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">CON IEXPO</div>
-                            <div style="font-size: 2rem; font-weight: 700; color: #1565C0;">$2.852B</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">Gastos Totales</div>
-                        </div>
-                        <div style="padding: 20px; background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); border-radius: 8px; border-left: 4px solid #FF9800;">
-                            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">SIN IEXPO</div>
-                            <div style="font-size: 2rem; font-weight: 700; color: #FF9800;">$623M</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">Gastos Esenciales</div>
-                        </div>
-                        <div style="padding: 20px; background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-radius: 8px; border-left: 4px solid #4CAF50;">
-                            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">AHORRO</div>
-                            <div style="font-size: 2rem; font-weight: 700; color: #4CAF50;">$2.229B</div>
-                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">Potencial Anual</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide-footer">
-            <span>Página 10</span>
-            <div class="footer-sep"></div>
-            <span>GASTOS FIJOS CONSOLIDADOS</span>
-        </div>
-    </div>
-
     <!-- SLIDE 11: GASTOS FIJOS ACUMULADOS PROYECCIÓN 2026 -->
     <div class="slide light">
         <div class="slide-header">
@@ -1826,7 +1746,7 @@
             </div>
             <span class="slide-number">13</span>
         </div>
-        <div class="slide-content" style="padding: 60px 40px 40px 40px; display: flex; flex-direction: column; gap: 15px;">
+        <div class="slide-content" style="padding: 150px 40px 40px 40px; display: flex; flex-direction: column; gap: 15px;">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                 <!-- GRÁFICO 1 -->
                 <div style="display: flex; flex-direction: column; align-items: center;">
@@ -1864,7 +1784,7 @@
             </div>
             <span class="slide-number">14</span>
         </div>
-        <div class="slide-content" style="padding: 30px 40px 40px 40px;">
+        <div class="slide-content" style="padding: 130px 40px 40px 40px;">
             <div class="grid-2" style="gap: 15px;">
                 <!-- CORTO PLAZO -->
                 <div>
@@ -1966,7 +1886,7 @@
             <div class="divider"></div>
 
             <div style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(183, 28, 28, 0.08) 100%); border: 2px solid var(--accent); border-radius: 12px; padding: 50px 40px; max-width: 800px; margin: 50px auto 0;">
-                <p style="font-size: 1.6rem; color: var(--primary); line-height: 2; margin: 0; font-weight: 700; text-align: center;">
+                <p style="font-size: 1.6rem; color: var(--primary-light); line-height: 2; margin: 0; font-weight: 700; text-align: center;">
                     "En cada exposición se construye una oportunidad,<br>en cada proyecto se forja el futuro."
                 </p>
                 <p style="font-size: 1.1rem; color: var(--accent); line-height: 1.8; margin-top: 20px; text-align: center; font-weight: 700;">
