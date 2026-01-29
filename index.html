@@ -1684,58 +1684,64 @@
 
     <!-- SLIDE 12: ALERTA CRÍTICA -->
     <div class="slide light" style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);">
-        <div class="slide-header" style="border-bottom-color: rgba(0, 0, 0, 0.1);">
-            <div>
-                <h2 style="color: var(--primary);"><i class="fas fa-exclamation-triangle"></i> ALERTA CRÍTICA</h2>
-                <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">FLUJO DE CAJA</p>
-            </div>
-            <span class="slide-number" style="color: var(--primary);">12</span>
+    <div class="slide-header" style="border-bottom-color: rgba(0, 0, 0, 0.1);">
+        <div>
+            <h2 style="color: var(--primary);"><i class="fas fa-exclamation-triangle"></i> ALERTA CRÍTICA</h2>
+            <p style="font-size: 0.85rem; color: var(--primary); margin-top: 12px; font-weight: 600;">FLUJO DE CAJA</p>
         </div>
-        <div class="slide-content" style="text-align: left; padding: 60px 40px;">
-            <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: center; height: calc(100vh - 220px);">
-                <!-- TABLA -->
-                <div>
-                    <div style="margin-bottom: 50px;">
-                        <table style="border-collapse: collapse; width: 100%; font-family: 'Inter', sans-serif;">
-                            <tr style="background: linear-gradient(90deg, var(--primary) 0%, #C41C1C 100%); color: white;">
-                                <td style="padding: 16px 20px; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px;">CONCEPTO</td>
-                                <td style="padding: 16px 20px; text-align: right; font-weight: 700; font-size: 0.95rem; letter-spacing: 0.5px;">VALOR (COP)</td>
-                            </tr>
-                            <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
-                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">BANCOS</td>
-                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">576.121.961</td>
-                            </tr>
-                            <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
-                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">CARTERA</td>
-                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">1.269.216.138</td>
-                            </tr>
-                            <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
-                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">CTAS. X PAGAR</td>
-                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">1.850.125.322</td>
-                            </tr>
-                            <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
-                                <td style="padding: 16px 20px; font-weight: 600; color: var(--text-dark);">CRÉDITO BANCOLDEX</td>
-                                <td style="padding: 16px 20px; text-align: right; color: var(--text-dark);">1.200.000.000</td>
-                            </tr>
-                            <tr style="background: linear-gradient(90deg, #FFE8E8 0%, #FFF4E8 100%); border: 2px solid var(--primary);">
-                                <td style="padding: 18px 20px; font-weight: 800; color: var(--primary); font-size: 1.05rem;">DISPONIBLE</td>
-                                <td style="padding: 18px 20px; text-align: right; font-weight: 800; color: var(--primary); font-size: 1.05rem;">-1.204.787.223</td>
-                            </tr>
-                        </table>
-                    </div>
+        <span class="slide-number" style="color: var(--primary);">12</span>
+    </div>
+    
+    <div class="slide-content" style="text-align: left; padding: 60px 40px;">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 40px; height: calc(100vh - 220px); max-width: 1000px; margin: 0 auto;">
+            
+            <!-- TABLA -->
+            <div style="width: 100%;">
+                <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden;">
+                    <thead>
+                        <tr style="background: linear-gradient(90deg, var(--primary) 0%, #C41C1C 100%); color: white;">
+                            <th style="padding: 20px 40px; font-weight: 700; font-size: 1rem; letter-spacing: 0.5px; text-align: left;">CONCEPTO</th>
+                            <th style="padding: 20px 40px; text-align: right; font-weight: 700; font-size: 1rem; letter-spacing: 0.5px;">VALOR (COP)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
+                            <td style="padding: 18px 40px; font-weight: 600; color: var(--text-dark); font-size: 0.95rem;">BANCOS</td>
+                            <td style="padding: 18px 40px; text-align: right; color: var(--text-dark); font-variant-numeric: tabular-nums; font-size: 0.95rem;">576.121.961</td>
+                        </tr>
+                        <tr style="background: white; border-bottom: 1px solid #E8E8E8;">
+                            <td style="padding: 18px 40px; font-weight: 600; color: var(--text-dark); font-size: 0.95rem;">CARTERA</td>
+                            <td style="padding: 18px 40px; text-align: right; color: var(--text-dark); font-variant-numeric: tabular-nums; font-size: 0.95rem;">1.269.216.138</td>
+                        </tr>
+                        <tr style="background: #F8FAFC; border-bottom: 1px solid #E8E8E8;">
+                            <td style="padding: 18px 40px; font-weight: 600; color: var(--text-dark); font-size: 0.95rem;">CTAS. X PAGAR</td>
+                            <td style="padding: 18px 40px; text-align: right; color: var(--text-dark); font-variant-numeric: tabular-nums; font-size: 0.95rem;">1.850.125.322</td>
+                        </tr>
+                        <tr style="background: white; border-bottom: 2px solid #E8E8E8;">
+                            <td style="padding: 18px 40px; font-weight: 600; color: var(--text-dark); font-size: 0.95rem;">CRÉDITO BANCOLDEX</td>
+                            <td style="padding: 18px 40px; text-align: right; color: var(--text-dark); font-variant-numeric: tabular-nums; font-size: 0.95rem;">1.200.000.000</td>
+                        </tr>
+                        <tr style="background: linear-gradient(90deg, #FFE8E8 0%, #FFF4E8 100%);">
+                            <td style="padding: 22px 40px; font-weight: 800; color: var(--primary); font-size: 1.1rem;">DISPONIBLE</td>
+                            <td style="padding: 22px 40px; text-align: right; font-weight: 800; color: var(--primary); font-size: 1.1rem; font-variant-numeric: tabular-nums;">-1.204.787.223</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-                    <div style="background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); padding: 24px 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
-                        <p style="font-size: 0.95rem; color: var(--primary); margin: 0; font-weight: 700; line-height: 1.6;">
-                            De acuerdo con esta información, para el año 2026 no se cuenta con capital de trabajo para la ejecución de proyectos.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- GRÁFICA -->
-                <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                    <canvas id="chartFlujoCaja" style="max-width: 100%; max-height: 400px;"></canvas>
+            <!-- MENSAJE DE ALERTA -->
+            <div style="width: 100%; background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%); padding: 28px 40px; border-radius: 12px; border-left: 6px solid var(--primary); box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <div style="display: flex; align-items: center; gap: 20px; justify-content: center;">
+                    <i class="fas fa-exclamation-circle" style="color: var(--primary); font-size: 2rem;"></i>
+                    <p style="font-size: 1.05rem; color: var(--primary); margin: 0; font-weight: 700; line-height: 1.7; text-align: center;">
+                        De acuerdo con esta información, para el año 2026 no se cuenta con capital de trabajo para la ejecución de proyectos.
+                    </p>
                 </div>
             </div>
+            
+        </div>
+    </div>
+</div>
         </div>
         <div class="slide-footer" style="color: #999;">
             <span>Página 11</span>
@@ -1875,147 +1881,6 @@
         </div>
     </div>
 
-    <!-- SLIDE 14: GLOSARIO PARTE 1 -->
-    <div class="slide light">
-        <div class="slide-header">
-            <h2>Glosario de Términos - Parte 1</h2>
-            <span class="slide-number">14</span>
-        </div>
-        <div class="slide-content">
-            <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: center;">
-                <!-- COLUMNA 1: CONCEPTOS FINANCIEROS -->
-                <div>
-                    <h3 class="section-title"><i class="fas fa-chart-line"></i> Conceptos Financieros</h3>
-                    <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 28px;">
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Margen Bruto</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Porcentaje de ganancia después de restar costos de producción directos (materia prima y mano de obra)</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Margen Operacional</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Utilidad operativa después de restar gastos administrativos y de venta</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Margen Neto</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Ganancia final después de todos los gastos, impuestos y amortizaciones</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">ROI (Return on Investment)</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Retorno sobre Inversión - ganancia generada por cada peso invertido en el proyecto</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">CAPEX</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Capital Expenditure - inversión en activos fijos, infraestructura y mejoras duraderas</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">KPI (Key Performance Indicator)</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Indicador Clave de Desempeño - métrica que mide el éxito de objetivos operacionales</span>
-                        </div>
-                        <div>
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Flujo de Caja</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Movimiento de dinero efectivo que entra y sale de la empresa en un periodo determinado</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COLUMNA 2: TÉRMINOS OPERACIONALES -->
-                <div>
-                    <h3 class="section-title"><i class="fas fa-cogs"></i> Términos Operacionales</h3>
-                    <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 28px;">
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Arquitectura Efímera</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Estructuras temporales y modulares diseñadas para ferias, congresos, eventos y exposiciones</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Proyectos Especiales</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Soluciones personalizadas y únicas diseñadas según requerimientos específicos del cliente</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Capital de Trabajo</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Efectivo disponible para financiar operaciones cotidianas y obligaciones a corto plazo</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Ciclo de Capital</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Tiempo transcurrido desde el pago a proveedores hasta el cobro de clientes</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Anticipos Comerciales</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Porcentaje del total que el cliente paga antes de iniciar el proyecto o evento</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Plazo Comercial</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Número de días otorgados al cliente para pagar la factura después del evento</span>
-                        </div>
-                        <div>
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Línea de Crédito</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Monto de dinero que una entidad financiera pone disponible para la empresa</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide-footer">
-            <span>Página 14</span>
-            <div class="footer-sep"></div>
-            <span><i class="fas fa-book" style="color: var(--primary); font-size: 0.6rem;"></i> Glosario - Parte 1</span>
-        </div>
-    </div>
-
-    <!-- SLIDE 16: GLOSARIO PARTE 2 -->
-    <div class="slide light">
-        <div class="slide-header">
-            <h2>Glosario de Términos - Parte 2</h2>
-            <span class="slide-number">16</span>
-        </div>
-        <div class="slide-content">
-            <div style="margin-top: 20px;">
-                <h3 class="section-title"><i class="fas fa-star"></i> Conceptos Estratégicos</h3>
-                <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
-                    <div style="display: flex; flex-direction: column; gap: 28px;">
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">ESG (Environmental, Social, Governance)</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Criterios Ambientales, Sociales y de Gobernanza que evalúan sostenibilidad empresarial</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Huella de Carbono</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Medida del impacto ambiental total de un producto o servicio en toneladas de CO2</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Diferenciación</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Estrategia de crear un producto o servicio único que se destaque de la competencia</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Segmentación</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">División del mercado en grupos de clientes con características y necesidades similares</span>
-                        </div>
-                    </div>
-                    <div style="display: flex; flex-direction: column; gap: 28px;">
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Penetración de Mercado</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Porcentaje del mercado potencial que la empresa ha conquistado con sus productos</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Ventaja Competitiva</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Características que hacen que una empresa sea superior a sus competidores</span>
-                        </div>
-                        <div style="padding-bottom: 20px; border-bottom: 2px solid var(--primary);">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Portfolio/Cartera</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Conjunto de productos y servicios que ofrece la empresa a sus clientes</span>
-                        </div>
-                        <div style="padding-bottom: 20px;">
-                            <strong style="color: var(--primary); font-size: 1.05rem;">Rentabilidad</strong><br>
-                            <span style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; display: block; margin-top: 8px;">Capacidad de generar ganancias o beneficio en relación a los recursos invertidos</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide-footer">
-            <span>Página 15</span>
-            <div class="footer-sep"></div>
-            <span><i class="fas fa-book" style="color: var(--primary); font-size: 0.6rem;"></i> Glosario - Parte 2</span>
-        </div>
-    </div>
 
     <!-- PROGRESS BAR -->
     <div class="progress-bar" id="progressBar"></div>
@@ -2501,76 +2366,7 @@
                 });
             }
 
-            if (!chartInstances['chartFlujoCaja'] && document.getElementById('chartFlujoCaja')?.getContext('2d')) {
-                chartInstances['chartFlujoCaja'] = new Chart(document.getElementById('chartFlujoCaja'), {
-                    type: 'bar',
-                    data: {
-                        labels: ['BANCOS', 'CARTERA', 'CTAS. X PAGAR', 'CRÉDITO', 'DISPONIBLE'],
-                        datasets: [{
-                            label: 'Valor (Millones COP)',
-                            data: [576.121961, 1269.216138, -1850.125322, 1200, -1204.787223],
-                            backgroundColor: [
-                                '#4CAF50',
-                                '#42A5F5',
-                                '#EF5350',
-                                '#1565C0',
-                                '#B71C1C'
-                            ],
-                            borderColor: [
-                                '#2E7D32',
-                                '#1565C0',
-                                '#C62828',
-                                '#0D47A1',
-                                '#7B0000'
-                            ],
-                            borderWidth: 2,
-                            borderRadius: 6
-                        }]
-                    },
-                    options: {
-                        indexAxis: 'y',
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: {
-                                display: true,
-                                labels: {
-                                    font: { size: 12, weight: '600' },
-                                    padding: 15,
-                                    color: '#0D1B2A'
-                                }
-                            },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) {
-                                        const value = context.parsed.x;
-                                        return (value >= 0 ? '+' : '') + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-                                    }
-                                }
-                            }
-                        },
-                        scales: {
-                            x: {
-                                ticks: {
-                                    callback: function(value) {
-                                        return (value >= 0 ? '+' : '') + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-                                    },
-                                    font: { size: 10, weight: '600' },
-                                    color: '#757575'
-                                },
-                                grid: { color: 'rgba(0,0,0,0.05)' }
-                            },
-                            y: {
-                                ticks: {
-                                    font: { size: 11, weight: '700' },
-                                    color: '#0D1B2A'
-                                },
-                                grid: { display: false }
-                            }
-                        }
-                    }
-                });
-            }
+
 
             if (!chartInstances['chartComparacion'] && document.getElementById('chartComparacion')?.getContext('2d')) {
                 chartInstances['chartComparacion'] = new Chart(document.getElementById('chartComparacion'), {
@@ -2597,7 +2393,6 @@
                     options: {
                         responsive: true,
                         maintainAspectRatio: true,
-                        indexAxis: 'y',
                         plugins: {
                             legend: {
                                 display: true,
@@ -2606,13 +2401,13 @@
                             tooltip: {
                                 callbacks: {
                                     label: function(context) {
-                                        return context.dataset.label + ': $' + context.parsed.x.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                                        return context.dataset.label + ': $' + context.parsed.y.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
                                     }
                                 }
                             }
                         },
                         scales: {
-                            x: {
+                            y: {
                                 ticks: {
                                     callback: function(value) {
                                         return '$' + value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
